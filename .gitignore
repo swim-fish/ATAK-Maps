@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .coverage
+.venv/
 
 # Generated Pages site artefacts
 /site/

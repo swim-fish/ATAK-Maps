@@ -1,0 +1,102 @@
+name: CI
+
+on:
+  pull_request:
+    paths:
+      - "**/*.xml"
+      - ".github/scripts/**"
+      - ".github/workflows/ci.yml"
+      - "README.md"
+      - "descriptions.yml"
+      - "docs/**"
+      - "map-tests/**"
+      - "mapvalidator/**"
+      - "mkdocs.yml"
+      - "package-profiles/**"
+      - "pyproject.toml"
+      - "schema/**"
+      - "scripts/**"
+      - "tests/**"
+      - "uv.lock"
+  push:
+    branches: [master]
+    paths:
+      - "**/*.xml"
+      - ".github/scripts/**"
+      - ".github/workflows/ci.yml"
+      - "README.md"
+      - "descriptions.yml"
+      - "docs/**"
+      - "map-tests/**"
+      - "mapvalidator/**"
+      - "mkdocs.yml"
+      - "package-profiles/**"
+      - "pyproject.toml"
+      - "schema/**"
+      - "scripts/**"
+      - "tests/**"
+      - "uv.lock"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Install dependencies
+        run: uv sync --extra dev --extra docs
+
+      - name: Install xmllint
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+
+      - name: Validate XML files against schema
+        shell: bash
+        run: |
+          status=0
+          while IFS= read -r -d '' file; do
+            echo "Validating: $file"
+            if ! xmllint --schema schema/mobac-maps.xsd "$file" --noout; then
+              status=1
+            fi
+          done < <(
+            find . -name '*.xml' \
+              -not -path './.github/*' \
+              -not -path './schema/*' \
+              -not -path './.git/*' \
+              -not -path './.venv/*' \
+              -print0
+          )
+          exit "$status"
+
+      - name: Run semantic map validation
+        run: uv run python -m mapvalidator
+
+      - name: Run tests with coverage
+        run: uv run pytest --cov=mapvalidator --cov-fail-under=80
+
+      - name: Verify README catalog is current
+        run: |
+          uv run python .github/scripts/generate-catalog.py
+          git diff --exit-code -- README.md
+
+      - name: Build ATAK Data Packages
+        run: >-
+          uv run python scripts/build_release_packages.py
+          --output-dir "${{ runner.temp }}/atak-packages"
+
+      - name: Build Pages site (strict)
+        run: |
+          uv run python scripts/gen_pages_catalog.py
+          uv run mkdocs build --strict
