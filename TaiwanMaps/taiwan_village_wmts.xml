@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customMapSource>
+    <name>Taiwan - Village Boundaries</name>
+    <minZoom>6</minZoom>
+    <maxZoom>17</maxZoom>
+    <tileType>png</tileType>
+    <url>https://wmts.nlsc.gov.tw/wmts/Village/default/GoogleMapsCompatible/{$z}/{$y}/{$x}</url>
+    <backgroundColor>#000000</backgroundColor>
+</customMapSource>

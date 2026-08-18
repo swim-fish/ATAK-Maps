@@ -53,6 +53,9 @@ grg-grg-waymarkedtrails-cycle-routes-overlay:
 google-google-hybrid:
   category: Satellite
   text: "Google satellite imagery with roads and labels — global."
+google-google-hybrid-no-poi:
+  category: Satellite
+  text: "Google satellite imagery with roads and labels but without points of interest — Traditional Chinese labels."
 google-google-roadmap-alt:
   category: Street
   text: "Google road map, alternate styling — global."
@@ -113,6 +116,39 @@ openseamap-openseamap-seamarks:
 opentopo-opentopo-opentopomap:
   category: Topographic
   text: "OpenTopoMap — topographic style over OSM with contours and hillshade, global."
+taiwanmaps-taiwan-gov-area-wmts:
+  category: Overlay
+  text: "Taiwan government-area boundaries from the National Land Surveying and Mapping Center (NLSC)."
+taiwanmaps-taiwan-village-wmts:
+  category: Overlay
+  text: "Taiwan village boundaries from the National Land Surveying and Mapping Center (NLSC)."
+taiwanmaps-taiwan-emap5:
+  category: Street
+  text: "Taiwan EMAP5 basemap from the National Land Surveying and Mapping Center (NLSC)."
+taiwanmaps-taiwan-emap8-en:
+  category: Street
+  text: "English-labelled Taiwan EMAP8 basemap from the National Land Surveying and Mapping Center (NLSC)."
+taiwanmaps-taiwan-emap96:
+  category: Street
+  text: "Taiwan EMAP96 basemap from the National Land Surveying and Mapping Center (NLSC)."
+taiwanmaps-taiwan-emap98:
+  category: Street
+  text: "Taiwan EMAP98 basemap from the National Land Surveying and Mapping Center (NLSC)."
+taiwanmaps-taiwan-b5000:
+  category: Topographic
+  text: "Taiwan B5000 map layer from the National Land Surveying and Mapping Center (NLSC)."
+taiwanmaps-taiwan-emap7-en-transparent:
+  category: Overlay
+  text: "Transparent English-labelled Taiwan map layer based on the NLSC EMAP7 service."
+taiwanmaps-taiwan-emap2-transparent:
+  category: Overlay
+  text: "Transparent Taiwan map layer based on the NLSC EMAP2 service."
+taiwanmaps-taiwan-photo-mix:
+  category: Satellite
+  text: "Taiwan aerial imagery with map labels from the NLSC PHOTO_MIX service."
+taiwanmaps-taiwan-photo:
+  category: Satellite
+  text: "Taiwan aerial imagery from the NLSC PHOTO2 service."
 usgs-usgs-usgsbasemap:
   category: Topographic
   text: "USGS The National Map topographic basemap — United States."

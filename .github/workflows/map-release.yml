@@ -3,7 +3,7 @@
 #
 # Flow:
 #   1. Sanity-check: latest git tag must be on this branch
-#   2. Zips every *.xml map into dist/atak-maps.zip
+#   2. Builds complete and Taiwan ATAK Mission Package v2 ZIPs
 #   3. semantic-release
 #        • calculates the next SemVer
 #        • tags the commit
@@ -18,7 +18,13 @@ name: Map Release
 on:
   push:
     branches: [master]
-    paths: "**/*.xml"
+    paths:
+      - "**/*.xml"
+      - "map-tests/taiwan-taichung.json"
+      - "package-profiles/**"
+      - "mapvalidator/catalog.py"
+      - "mapvalidator/data_package.py"
+      - "scripts/build_release_packages.py"
   workflow_dispatch:
 
 jobs:
@@ -52,11 +58,8 @@ jobs:
           fi
           echo "Tag $LATEST_TAG is reachable from HEAD — safe to release."
 
-      - name: Build ZIP of maps
-        run: |
-          mkdir -p dist
-          # Use null-delimited find to handle spaces in filenames
-          git ls-files -z '*.xml' | xargs -0 zip dist/atak-maps.zip
+      - name: Build map ZIPs
+        run: python3 scripts/build_release_packages.py
 
       - name: semantic-release
         uses: cycjimmy/semantic-release-action@v4

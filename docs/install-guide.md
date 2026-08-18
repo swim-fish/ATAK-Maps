@@ -2,7 +2,7 @@
 
 ## Quick Start
 
-1. Download `atak-maps.zip` from the [Releases page](https://github.com/joshuafuller/ATAK-Maps/releases).
+1. Download the recommended `atak-maps-taiwan-essential.zip`, an extended Taiwan package, or the complete package from the [Releases page](https://github.com/joshuafuller/ATAK-Maps/releases).
 2. Open the ZIP in ATAK using **Import** — ATAK places the map files automatically.
 3. New map sources appear in the map layer selector.
 
@@ -14,7 +14,7 @@ That's it. ATAK's Import feature handles file placement for you.
 
 The easiest way to install maps is through ATAK's built-in Import feature:
 
-1. Download `atak-maps.zip` from the [Releases page](https://github.com/joshuafuller/ATAK-Maps/releases) onto your device.
+1. Download `atak-maps-taiwan-essential.zip`, `atak-maps-taiwan.zip`, or `atak-maps.zip` from the [Releases page](https://github.com/joshuafuller/ATAK-Maps/releases) onto your device.
 2. In ATAK, tap **Import** (or use your file manager to open the ZIP with ATAK).
 3. ATAK ingests the ZIP and the map sources populate automatically.
 4. Check the map layer selector — new sources should be listed.
@@ -23,7 +23,14 @@ No manual file copying required. ATAK handles sorting base maps and overlays int
 
 ## What's in the Download
 
-The release ZIP contains all available XML map source files, organized by provider:
+The release provides three ATAK Mission Package v2 ZIP archives:
+
+- `atak-maps-taiwan-essential.zip` contains 14 commonly used Google, Taiwan NLSC, and fallback sources.
+- `atak-maps-taiwan.zip` contains the 32 sources approved by the [Taiwan coverage profile](taiwan-map-coverage.md).
+- `atak-maps.zip` contains all 52 available XML map sources.
+
+Each archive contains exactly one `MANIFEST/manifest.xml`. Map XML files are
+stored under `content/` and declared as ATAK `External Native Data`.
 
 - **Providers included:** Bing, Google, ESRI, USGS, OpenTopo, and others
 - **Two types of files:**

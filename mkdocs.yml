@@ -32,6 +32,7 @@ nav:
   - Home: index.md
   - Maps: maps.md
   - Installation: install-guide.md
+  - Taiwan Coverage: taiwan-map-coverage.md
   - Creating Custom Maps: creating-custom-maps.md
   - XML Reference: xml-reference.md
   - Releases: release-guide.md

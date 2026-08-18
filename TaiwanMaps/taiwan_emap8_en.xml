@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <customMapSource>
-    <name>Esri - Clarity</name>
+    <name>Taiwan - EMAP8 English</name>
     <minZoom>1</minZoom>
     <maxZoom>19</maxZoom>
     <tileType>jpg</tileType>
-    <tileUpdate>None</tileUpdate>
-    <url>https://clarity.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{$z}/{$y}/{$x}</url>
+    <url>https://wmts.nlsc.gov.tw/wmts/EMAP8/default/GoogleMapsCompatible/{$z}/{$y}/{$x}.png</url>
     <backgroundColor>#000000</backgroundColor>
 </customMapSource>

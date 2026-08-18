@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "profile": "taiwan-essential",
+  "package": {
+    "filename": "atak-maps-taiwan-essential.zip",
+    "uid": "2d650f66-f76c-4d95-a714-4f4c879c4322",
+    "name": "ATAK-Maps - Taiwan Essential"
+  },
+  "description": "Curated Google, Taiwan NLSC, and fallback maps for routine ATAK use in Taiwan.",
+  "sources": [
+    "ESRI/esri_world_topo.xml",
+    "Google/google_hybrid.xml",
+    "Google/google_roadmap_standard.xml",
+    "Google/google_satellite_only.xml",
+    "Google/google_terrain.xml",
+    "TaiwanMaps/taiwan_b5000.xml",
+    "TaiwanMaps/taiwan_emap2_transparent.xml",
+    "TaiwanMaps/taiwan_emap5.xml",
+    "TaiwanMaps/taiwan_emap8_en.xml",
+    "TaiwanMaps/taiwan_gov_area_wmts.xml",
+    "TaiwanMaps/taiwan_photo.xml",
+    "TaiwanMaps/taiwan_photo_mix.xml",
+    "TaiwanMaps/taiwan_village_wmts.xml",
+    "opentopo/opentopo_opentopomap.xml"
+  ]
+}

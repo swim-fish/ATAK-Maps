@@ -33,6 +33,16 @@
             "path": "dist/atak-maps.zip",
             "name": "atak-maps.zip",
             "label": "atak-maps.zip"
+          },
+          {
+            "path": "dist/atak-maps-taiwan.zip",
+            "name": "atak-maps-taiwan.zip",
+            "label": "atak-maps-taiwan.zip (Taiwan-tested sources)"
+          },
+          {
+            "path": "dist/atak-maps-taiwan-essential.zip",
+            "name": "atak-maps-taiwan-essential.zip",
+            "label": "atak-maps-taiwan-essential.zip (recommended for Taiwan)"
           }
         ],
         "failComment": false,

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customMapSource>
+    <name>Taiwan - EMAP96</name>
+    <minZoom>8</minZoom>
+    <maxZoom>19</maxZoom>
+    <tileType>png</tileType>
+    <url>https://wmts.nlsc.gov.tw/wmts/EMAP96/default/GoogleMapsCompatible/{$z}/{$y}/{$x}.png</url>
+    <backgroundColor>#000000</backgroundColor>
+</customMapSource>

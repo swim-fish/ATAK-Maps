@@ -2,7 +2,7 @@
 <customMapSource>
    <name>CycleOSM - OSM Cycle</name>
    <minZoom>0</minZoom>
-   <maxZoom>21</maxZoom>
+   <maxZoom>20</maxZoom>
    <tileType>png</tileType>
    <url>https://a.tile-cyclosm.openstreetmap.fr/cyclosm/{$z}/{$x}/{$y}.png</url>
    <tileUpdate>None</tileUpdate>

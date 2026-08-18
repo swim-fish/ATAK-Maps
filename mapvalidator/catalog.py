@@ -38,29 +38,44 @@ PACKAGE_SUBDIR = "pack"
 PACKAGE_FILENAME = "atak-maps-all.zip"
 PACKAGE_UID = "4e29c057-7d12-40cb-9651-01b9bec4edf3"
 PACKAGE_NAME = "ATAK-Maps - All Maps"
+TAIWAN_PACKAGE_FILENAME = "atak-maps-taiwan.zip"
+TAIWAN_PACKAGE_UID = "7f57ed50-3f70-47fa-84e0-0dc2397b3f74"
+TAIWAN_PACKAGE_NAME = "ATAK-Maps - Taiwan Tested"
+TAIWAN_ESSENTIAL_PACKAGE_FILENAME = "atak-maps-taiwan-essential.zip"
+TAIWAN_ESSENTIAL_PACKAGE_UID = "2d650f66-f76c-4d95-a714-4f4c879c4322"
+TAIWAN_ESSENTIAL_PACKAGE_NAME = "ATAK-Maps - Taiwan Essential"
 
 
-def build_manifest(zip_entries: list[str]) -> str:
+def build_manifest(
+    zip_entries: list[str],
+    package_uid: str = PACKAGE_UID,
+    package_name: str = PACKAGE_NAME,
+) -> str:
     """Return the MANIFEST/manifest.xml (Mission Package v2) for the data package.
 
-    ``zip_entries`` are the in-zip paths of the bundled source XML files. Format
-    matches ATAK's MissionPackageManifest: a Configuration block (uid/name and
-    onReceiveImport=true so ATAK imports the contents) and a Contents block with
-    one <Content zipEntry="..."/> per file.
+    ``zip_entries`` are the in-zip paths of the bundled source XML files. Each
+    map source is authored as ATAK ``External Native Data``, matching the
+    customMapSource resolver contract used by ATAK CIV 5.7.
     """
+    uid = html.escape(package_uid, quote=True)
+    name = html.escape(package_name, quote=True)
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<MissionPackageManifest version="2">',
         "   <Configuration>",
-        f'      <Parameter name="uid" value="{PACKAGE_UID}"/>',
-        f'      <Parameter name="name" value="{PACKAGE_NAME}"/>',
-        '      <Parameter name="onReceiveImport" value="true"/>',
-        '      <Parameter name="onReceiveDelete" value="false"/>',
+        f'      <Parameter name="uid" value="{uid}"/>',
+        f'      <Parameter name="name" value="{name}"/>',
         "   </Configuration>",
         "   <Contents>",
     ]
     for entry in sorted(zip_entries):
-        lines.append(f'      <Content ignore="false" zipEntry="{entry}"/>')
+        safe_entry = html.escape(entry, quote=True)
+        lines += [
+            f'      <Content ignore="false" zipEntry="{safe_entry}">',
+            '         <Parameter name="contentType" '
+            'value="External Native Data"/>',
+            "      </Content>",
+        ]
     lines += ["   </Contents>", "</MissionPackageManifest>", ""]
     return "\n".join(lines)
 
@@ -68,6 +83,20 @@ def build_manifest(zip_entries: list[str]) -> str:
 def package_import_uri() -> str:
     """tak:// import URI for the whole-map-pack data package hosted on Pages."""
     return build_import_uri(f"{PAGES_BASE}/{PACKAGE_SUBDIR}/{PACKAGE_FILENAME}")
+
+
+def taiwan_package_import_uri() -> str:
+    """tak:// import URI for the Taiwan-tested package hosted on Pages."""
+    return build_import_uri(
+        f"{PAGES_BASE}/{PACKAGE_SUBDIR}/{TAIWAN_PACKAGE_FILENAME}"
+    )
+
+
+def taiwan_essential_package_import_uri() -> str:
+    """tak:// import URI for the Taiwan Essential package hosted on Pages."""
+    return build_import_uri(
+        f"{PAGES_BASE}/{PACKAGE_SUBDIR}/{TAIWAN_ESSENTIAL_PACKAGE_FILENAME}"
+    )
 
 
 EXCLUDE_DIRS = {

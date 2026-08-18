@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customMapSource>
+    <name>Taiwan - B5000 Topographic</name>
+    <minZoom>7</minZoom>
+    <maxZoom>18</maxZoom>
+    <tileType>png</tileType>
+    <url>https://wmts.nlsc.gov.tw/wmts/B5000/default/GoogleMapsCompatible/{$z}/{$y}/{$x}</url>
+    <backgroundColor>#000000</backgroundColor>
+</customMapSource>

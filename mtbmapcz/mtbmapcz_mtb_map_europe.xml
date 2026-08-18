@@ -2,7 +2,7 @@
 <customMapSource>
     <name>MTBMap.cz - MTB Map Europe</name>
     <minZoom>0</minZoom>
-    <maxZoom>21</maxZoom>
+    <maxZoom>18</maxZoom>
     <tileType>png</tileType>
     <url>http://tile.mtbmap.cz/mtbmap_tiles/{$z}/{$x}/{$y}.png</url>
     <tileUpdate>None</tileUpdate>

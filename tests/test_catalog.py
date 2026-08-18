@@ -154,15 +154,21 @@ def test_build_manifest_structure():
     )
     assert '<MissionPackageManifest version="2">' in md
     assert f'<Parameter name="uid" value="{PACKAGE_UID}"/>' in md
-    assert '<Parameter name="onReceiveImport" value="true"/>' in md
-    assert '<Content ignore="false" zipEntry="BLM/blm_land_ownership_sma.xml"/>' in md
-    assert '<Content ignore="false" zipEntry="OrdnanceSurvey/os_road_3857.xml"/>' in md
+    assert "onReceiveImport" not in md
+    assert '<Content ignore="false" zipEntry="BLM/blm_land_ownership_sma.xml">' in md
+    assert 'name="contentType" value="External Native Data"' in md
     # sorted + well-formed
     import xml.etree.ElementTree as ET
 
     root = ET.fromstring(md)
     assert root.tag == "MissionPackageManifest"
-    assert len(root.find("Contents").findall("Content")) == 2
+    contents = root.find("Contents").findall("Content")
+    assert len(contents) == 2
+    assert all(
+        content.find("Parameter").attrib
+        == {"name": "contentType", "value": "External Native Data"}
+        for content in contents
+    )
 
 
 def test_package_import_uri_targets_pages_pack():
@@ -172,3 +178,34 @@ def test_package_import_uri_targets_pages_pack():
     assert uri.startswith("tak://com.atakmap.app/import?url=")
     assert "joshuafuller.github.io%2FATAK-Maps%2Fpack%2Fatak-maps-all.zip" in uri
     assert "raw.githubusercontent" not in uri
+
+
+def test_build_manifest_accepts_regional_package_identity():
+    from mapvalidator.catalog import build_manifest
+
+    manifest = build_manifest(
+        ["TaiwanMaps/taiwan_photo.xml"],
+        package_uid="regional-uid",
+        package_name="Regional Maps",
+    )
+
+    assert '<Parameter name="uid" value="regional-uid"/>' in manifest
+    assert '<Parameter name="name" value="Regional Maps"/>' in manifest
+
+
+def test_taiwan_package_import_uri_targets_filtered_pages_pack():
+    from mapvalidator.catalog import taiwan_package_import_uri
+
+    uri = taiwan_package_import_uri()
+
+    assert uri.startswith("tak://com.atakmap.app/import?url=")
+    assert "atak-maps-taiwan.zip" in uri
+
+
+def test_taiwan_essential_package_import_uri_targets_curated_pages_pack():
+    from mapvalidator.catalog import taiwan_essential_package_import_uri
+
+    uri = taiwan_essential_package_import_uri()
+
+    assert uri.startswith("tak://com.atakmap.app/import?url=")
+    assert "atak-maps-taiwan-essential.zip" in uri
