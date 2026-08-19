@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/joshuafuller/ATAK-Maps/blob/master/images/ATAK_MAPS_Logo.png?raw=true" alt="ATAK-Maps" width="440">
+<img src="images/ATAK_MAPS_Logo.png" alt="ATAK-Maps" width="440">
 
 # ATAK-Maps
 
@@ -10,10 +10,10 @@ A curated, open collection of **52** satellite, topographic, nautical, trail and
 overlay map sources — scan a QR, tap **Add to ATAK**, or side-load. No manual
 file wrangling. ATAK&nbsp;5.1+.
 
-[![Latest Release](https://img.shields.io/github/v/release/joshuafuller/ATAK-Maps?style=flat)](https://github.com/joshuafuller/ATAK-Maps/releases/latest) ![Release Date](https://img.shields.io/github/release-date/joshuafuller/ATAK-Maps?style=flat) [![Downloads](https://img.shields.io/github/downloads/joshuafuller/ATAK-Maps/total?style=flat)](https://github.com/joshuafuller/ATAK-Maps/releases/latest) [![CI](https://img.shields.io/github/actions/workflow/status/joshuafuller/ATAK-Maps/ci.yml?label=CI&style=flat)](https://github.com/joshuafuller/ATAK-Maps/actions/workflows/ci.yml)
-[![Stars](https://img.shields.io/github/stars/joshuafuller/ATAK-Maps?style=flat)](https://github.com/joshuafuller/ATAK-Maps) [![License](https://img.shields.io/github/license/joshuafuller/ATAK-Maps?style=flat)](LICENSE) [![Discord](https://img.shields.io/discord/698067185515495436?style=flat)](https://discord.gg/dQUYADMW87) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/joshuafuller/ATAK-Maps)
+[![Latest Release](https://img.shields.io/github/v/release/swim-fish/ATAK-Maps?style=flat)](https://github.com/swim-fish/ATAK-Maps/releases/latest) ![Release Date](https://img.shields.io/github/release-date/swim-fish/ATAK-Maps?style=flat) [![Downloads](https://img.shields.io/github/downloads/swim-fish/ATAK-Maps/total?style=flat)](https://github.com/swim-fish/ATAK-Maps/releases/latest) [![CI](https://img.shields.io/github/actions/workflow/status/swim-fish/ATAK-Maps/ci.yml?label=CI&style=flat)](https://github.com/swim-fish/ATAK-Maps/actions/workflows/ci.yml)
+[![Stars](https://img.shields.io/github/stars/swim-fish/ATAK-Maps?style=flat)](https://github.com/swim-fish/ATAK-Maps) [![License](https://img.shields.io/github/license/swim-fish/ATAK-Maps?style=flat)](LICENSE) [![Discord](https://img.shields.io/discord/698067185515495436?style=flat)](https://discord.gg/dQUYADMW87)
 
-### [Browse &amp; install from the catalog site&nbsp;&rarr;](https://joshuafuller.github.io/ATAK-Maps/)
+### [Browse &amp; install from the catalog site&nbsp;&rarr;](https://swim-fish.github.io/ATAK-Maps/)
 
 </div>
 
@@ -27,7 +27,7 @@ file wrangling. ATAK&nbsp;5.1+.
 </td>
 <td>
 
-**Fastest — per map:** open the **[catalog site](https://joshuafuller.github.io/ATAK-Maps/maps/)**
+**Fastest — per map:** open the **[catalog site](https://swim-fish.github.io/ATAK-Maps/maps/)**
 on your ATAK device and tap **Add to ATAK** on any map (filter by style, or
 scan a QR from another screen).
 
@@ -35,22 +35,27 @@ scan a QR from another screen).
 it imports a data package with all 52 maps, kept in ATAK's Mission Package Tool
 so you can remove them later:
 
-`tak://com.atakmap.app/import?url=https%3A%2F%2Fjoshuafuller.github.io%2FATAK-Maps%2Fpack%2Fatak-maps-all.zip`
+`tak://com.atakmap.app/import?url=https%3A%2F%2Fswim-fish.github.io%2FATAK-Maps%2Fpack%2Fatak-maps-all.zip`
 
 **Taiwan Essential (recommended):** install 14 commonly used Google, Taiwan
 NLSC, and fallback maps without cluttering ATAK's map selector:
 
-`tak://com.atakmap.app/import?url=https%3A%2F%2Fjoshuafuller.github.io%2FATAK-Maps%2Fpack%2Fatak-maps-taiwan-essential.zip`
+`tak://com.atakmap.app/import?url=https%3A%2F%2Fswim-fish.github.io%2FATAK-Maps%2Fpack%2Fatak-maps-taiwan-essential.zip`
 
 **Taiwan-tested set:** install the extended set of 32 sources that display
 useful Taiwan content without requiring a non-Taiwan API key:
 
-`tak://com.atakmap.app/import?url=https%3A%2F%2Fjoshuafuller.github.io%2FATAK-Maps%2Fpack%2Fatak-maps-taiwan.zip`
+`tak://com.atakmap.app/import?url=https%3A%2F%2Fswim-fish.github.io%2FATAK-Maps%2Fpack%2Fatak-maps-taiwan.zip`
 
-**Manual:** download `atak-maps-taiwan-essential.zip`, the extended
-`atak-maps-taiwan.zip`, or the complete `atak-maps.zip` from the
-[Releases page](https://github.com/joshuafuller/ATAK-Maps/releases) and open it
-with ATAK's Import feature. See the **[Install Guide](docs/install-guide.md)**
+**Manual:** download the recommended
+[`atak-maps-taiwan-essential.zip`](https://github.com/swim-fish/ATAK-Maps/releases/latest/download/atak-maps-taiwan-essential.zip),
+the extended
+[`atak-maps-taiwan.zip`](https://github.com/swim-fish/ATAK-Maps/releases/latest/download/atak-maps-taiwan.zip),
+or the complete
+[`atak-maps.zip`](https://github.com/swim-fish/ATAK-Maps/releases/latest/download/atak-maps.zip),
+then open it with ATAK's Import feature. Release assets also include
+[`SHA256SUMS`](https://github.com/swim-fish/ATAK-Maps/releases/latest/download/SHA256SUMS)
+for integrity verification. See the **[Install Guide](docs/install-guide.md)**
 for troubleshooting and offline caching.
 
 </td>
@@ -150,7 +155,7 @@ stored under `content/`, referenced by `MANIFEST/manifest.xml`, and declared as
 ## Frequently Asked Questions (FAQ)
 
 - **Can I cache these maps for offline use?** Yes, ATAK supports automatic and manual caching of maps.
-- **Will more maps be added?** We continuously update our map collection. Share your suggestions [here](https://github.com/joshuafuller/ATAK-Maps/issues).
+- **Will more maps be added?** We continuously update our map collection. Share your suggestions [here](https://github.com/swim-fish/ATAK-Maps/issues).
 
 ## OpenStreetMap Compatibility
 
@@ -174,8 +179,8 @@ To publish a new release, push a commit to `master` with a message that begins
 with `feat:` or `fix:` using the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format.
 The *Map Release* workflow runs automatically on those commits—or it can be
 triggered manually from the *Actions* tab—and uses semantic-release to tag the
-commit and upload `atak-maps.zip`, `atak-maps-taiwan.zip`, and the recommended
-`atak-maps-taiwan-essential.zip`.
+commit and upload `atak-maps.zip`, `atak-maps-taiwan.zip`, the recommended
+`atak-maps-taiwan-essential.zip`, and `SHA256SUMS`.
 For more details, including instructions for forks, see [docs/release-guide.md](docs/release-guide.md).
 
 ## License

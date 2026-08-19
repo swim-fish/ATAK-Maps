@@ -55,7 +55,7 @@ def test_build_map_entry_fields(tmp_path):
     # NOT raw githubusercontent (text/plain) — otherwise ATAK appends .txt and
     # silently drops the map. See mapvalidator.catalog.PAGES_BASE.
     assert e["import_url"] == (
-        "https://joshuafuller.github.io/ATAK-Maps/sources/"
+        "https://swim-fish.github.io/ATAK-Maps/sources/"
         "OrdnanceSurvey/os_road_3857.xml"
     )
     from urllib.parse import quote
@@ -91,12 +91,12 @@ def test_render_maps_page_card_html():
     assert "OS road map of Great Britain." in md
     # the Add-to-ATAK button links the import URI
     assert 'href="tak://com.atakmap.app/import?url=ENC"' in md
-    assert "Add to ATAK" in md
+    assert "新增至 ATAK" in md
     assert "qr/ordnancesurvey-os-road-3857.png" in md
     assert 'href="https://raw.example/os.xml"' in md  # view source
-    assert "key required" in md  # needs_key badge
+    assert "需要 API 金鑰" in md  # needs_key badge
     # a Street filter chip is present
-    assert '<button class="am-chip" data-cat="Street">Street</button>' in md
+    assert '<button class="am-chip" data-cat="Street">街道圖</button>' in md
     # the tap-to-enlarge QR lightbox is present
     assert "am-lightbox" in md
 
@@ -125,7 +125,7 @@ def test_render_maps_page_no_key_badge_when_not_needed():
         [_USGS_ENTRY],
         descriptions={"usgs-topo": {"category": "Topographic", "text": "t"}},
     )
-    assert "key required" not in md
+    assert "需要 API 金鑰" not in md
 
 
 def test_render_maps_page_hero_when_package_given():
@@ -138,12 +138,38 @@ def test_render_maps_page_hero_when_package_given():
     assert "am-hero" in md
     assert 'href="tak://com.atakmap.app/import?url=PKG"' in md
     assert "qr/_all-maps.png" in md
-    assert "Add all 1 maps to ATAK" in md
+    assert "將全部 1 個地圖來源新增至 ATAK" in md
 
 
 def test_render_maps_page_no_hero_without_package():
     md = render_maps_page([_USGS_ENTRY])
     assert "am-hero" not in md
+
+
+def test_render_maps_page_adds_taiwan_package_choices_and_filters():
+    md = render_maps_page(
+        [_USGS_ENTRY],
+        descriptions={
+            "usgs-topo": {"category": "Topographic", "text": "地形圖"}
+        },
+        package_choices=[
+            {
+                "title": "臺灣精選版",
+                "description": "適合臺灣使用者。",
+                "count": 1,
+                "uri": "tak://example",
+                "qr": "../qr/taiwan.png",
+                "recommended": True,
+            }
+        ],
+        package_filters={"taiwan-essential": {"usgs-topo"}},
+    )
+
+    assert "選擇適合臺灣使用的地圖包" in md
+    assert "臺灣精選版" in md
+    assert 'data-package="taiwan-essential"' in md
+    assert 'data-packages="taiwan-essential"' in md
+    assert "地形圖" in md
 
 
 def test_build_manifest_structure():
@@ -176,7 +202,7 @@ def test_package_import_uri_targets_pages_pack():
 
     uri = package_import_uri()
     assert uri.startswith("tak://com.atakmap.app/import?url=")
-    assert "joshuafuller.github.io%2FATAK-Maps%2Fpack%2Fatak-maps-all.zip" in uri
+    assert "swim-fish.github.io%2FATAK-Maps%2Fpack%2Fatak-maps-all.zip" in uri
     assert "raw.githubusercontent" not in uri
 
 

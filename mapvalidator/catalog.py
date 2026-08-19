@@ -19,7 +19,18 @@ CATEGORY_ORDER = [
     "Land use",
 ]
 
-RAW_BASE = "https://raw.githubusercontent.com/joshuafuller/ATAK-Maps/master"
+CATEGORY_LABELS = {
+    "Satellite": "衛星影像",
+    "Topographic": "地形圖",
+    "Street": "街道圖",
+    "Nautical": "航海圖",
+    "Cycling": "自行車",
+    "Overlay": "圖層",
+    "Land use": "土地利用",
+    "Other": "其他",
+}
+
+RAW_BASE = "https://raw.githubusercontent.com/swim-fish/ATAK-Maps/master"
 
 # The tak:// import target must be served with an XML content type. raw
 # githubusercontent serves .xml as text/plain, which makes ATAK's
@@ -27,7 +38,7 @@ RAW_BASE = "https://raw.githubusercontent.com/joshuafuller/ATAK-Maps/master"
 # so no map-source resolver claims the file and the import silently no-ops.
 # GitHub Pages serves .xml as application/xml, so the site hosts a copy of
 # every source under /sources/<path> and the import points there instead.
-PAGES_BASE = "https://joshuafuller.github.io/ATAK-Maps"
+PAGES_BASE = "https://swim-fish.github.io/ATAK-Maps"
 # Directory (relative to the MkDocs docs dir) the generator copies sources into.
 SOURCES_SUBDIR = "sources"
 
@@ -172,18 +183,20 @@ def _cat_class(category: str) -> str:
     return slugify(category) or "other"
 
 
-def _card_html(entry: dict, meta: dict) -> str:
+def _card_html(entry: dict, meta: dict, memberships: set[str] | None = None) -> str:
     """Render one map as a card. ``meta`` is {category, text} or {}."""
     name = html.escape(entry["name"])
     category = meta.get("category") or "Other"
+    category_label = CATEGORY_LABELS.get(category, category)
     desc = html.escape(meta.get("text") or "")
+    package_value = " ".join(sorted(memberships or set()))
     # data-search powers the on-page filter (name + description + provider).
     search = html.escape(
         " ".join((entry["name"], meta.get("text") or "", entry["provider"])).lower(),
         quote=True,
     )
     key_badge = (
-        '<span class="am-card__key" title="Requires a free API key">key required</span>'
+        '<span class="am-card__key" title="需要免費 API 金鑰">需要 API 金鑰</span>'
         if entry["needs_key"]
         else ""
     )
@@ -191,23 +204,24 @@ def _card_html(entry: dict, meta: dict) -> str:
     src_href = html.escape(entry["raw_url"], quote=True)
     return (
         f'<article class="am-card" data-cat="{html.escape(category, quote=True)}" '
+        f'data-packages="{html.escape(package_value, quote=True)}" '
         f'data-search="{search}">'
         '<div class="am-card__top">'
         f'<span class="am-badge am-badge--{_cat_class(category)}">'
-        f"{html.escape(category)}</span>"
+        f"{html.escape(category_label)}</span>"
         f'<span class="am-type">{html.escape(entry["source_type"])}</span>'
         "</div>"
         f'<h3 class="am-card__name">{name}</h3>'
         f'<p class="am-card__desc">{desc}</p>'
         '<div class="am-card__actions">'
         f'<a class="am-btn am-btn--add" href="{add_href}">'
-        f"{_ADD_ICON}<span>Add to ATAK</span></a>"
+        f"{_ADD_ICON}<span>新增至 ATAK</span></a>"
         f'<img class="am-card__qr" src="../qr/{entry["slug"]}.png" '
-        f'alt="QR code to add {name} to ATAK" loading="lazy" '
-        'title="Scan from another device">'
+        f'alt="掃描 QR Code，即可將 {name} 新增至 ATAK" loading="lazy" '
+        'title="使用另一部裝置掃描">'
         "</div>"
         '<div class="am-card__foot">'
-        f'<a href="{src_href}">View source</a>'
+        f'<a href="{src_href}">檢視來源</a>'
         f"{key_badge}"
         "</div>"
         "</article>"
@@ -219,53 +233,72 @@ def render_maps_page(
     descriptions: dict | None = None,
     package_uri: str | None = None,
     package_qr: str | None = None,
+    package_choices: list[dict] | None = None,
+    package_filters: dict[str, set[str]] | None = None,
 ) -> str:
-    """Render the Maps page: an install hero, a category filter, and a card grid.
-
-    ``descriptions`` maps slug -> {category, text}. ``package_uri`` and
-    ``package_qr`` (when given) render the "install everything" hero for the
-    whole-map-pack data package.
-    """
+    """Render the zh-TW Maps page with package and category filters."""
     descriptions = descriptions or {}
+    package_choices = package_choices or []
+    package_filters = package_filters or {}
     ordered = sorted(entries, key=lambda x: (x["provider"].lower(), x["name"].lower()))
     total = len(ordered)
 
-    out = ["# Maps", ""]
+    out = ["# 地圖", ""]
 
-    # Install-everything hero.
-    if package_uri and package_qr:
+    if package_choices:
+        out += [
+            '<section class="am-package-section">',
+            "  <h2>選擇適合臺灣使用的地圖包</h2>",
+            "  <p>建議先安裝臺灣精選版；需要更多全球備援來源時，再選擇臺灣測試版或完整版。</p>",
+            '  <div class="am-package-grid">',
+        ]
+        for choice in package_choices:
+            css_class = " am-package-card--recommended" if choice.get("recommended") else ""
+            badge = '<span class="am-package-card__badge">建議</span>' if choice.get("recommended") else ""
+            out += [
+                f'    <article class="am-package-card{css_class}">',
+                f"      {badge}",
+                f"      <h3>{html.escape(choice['title'])}</h3>",
+                f"      <p>{html.escape(choice['description'])}</p>",
+                '      <div class="am-package-card__actions">',
+                f'        <a class="am-btn am-btn--all" href="{html.escape(choice["uri"], quote=True)}">'
+                f'{_ADD_ICON}<span>新增 {choice["count"]} 個地圖來源</span></a>',
+                f'        <img class="am-card__qr" src="{html.escape(choice["qr"], quote=True)}" '
+                f'alt="掃描 QR Code，即可安裝{html.escape(choice["title"])}">',
+                "      </div>",
+                "    </article>",
+            ]
+        out += ["  </div>", "</section>", ""]
+    elif package_uri and package_qr:
         pkg_href = html.escape(package_uri, quote=True)
         pkg_qr = html.escape(package_qr, quote=True)
         out += [
             '<section class="am-hero">',
             '  <div class="am-hero__body">',
-            "    <h2>Install every map at once</h2>",
-            f"    <p>Tap the button on your ATAK device, or scan the code from "
-            f"another device. Imports one data package with all {total} maps "
-            f"(ATAK&nbsp;5.1+).</p>",
+            "    <h2>一次安裝全部地圖</h2>",
+            f"    <p>在 ATAK 裝置上點選按鈕，或使用另一部裝置掃描 QR Code，"
+            f"即可匯入包含 {total} 個地圖來源的資料集（需要 ATAK&nbsp;5.1 以上版本）。</p>",
             f'    <a class="am-btn am-btn--all" href="{pkg_href}">'
-            f"{_ADD_ICON}<span>Add all {total} maps to ATAK</span></a>",
-            '    <p class="am-hero__note">Kept in ATAK’s Mission Package '
-            "Tool, so you can remove them all later by deleting the package.</p>",
+            f"{_ADD_ICON}<span>將全部 {total} 個地圖來源新增至 ATAK</span></a>",
+            '    <p class="am-hero__note">匯入後會保留於 ATAK 的 Mission Package '
+            "資料集封裝格式工具中，日後可刪除整個資料集。</p>",
             "  </div>",
             f'  <img class="am-hero__qr" src="{pkg_qr}" '
-            'alt="QR code to add all maps to ATAK">',
+            'alt="掃描 QR Code，即可將全部地圖新增至 ATAK">',
             "</section>",
             "",
         ]
 
-    # How-it-works.
     out += [
         '<div class="am-how">',
-        '  <div class="am-how__step"><span>1</span> On your ATAK device, tap '
-        "<b>Add to ATAK</b> and confirm the prompt.</div>",
-        '  <div class="am-how__step"><span>2</span> From another device, scan '
-        "the <b>QR code</b> with ATAK.</div>",
+        '  <div class="am-how__step"><span>1</span> 在 ATAK 裝置上點選 '
+        "<b>新增至 ATAK</b>，再確認匯入提示。</div>",
+        '  <div class="am-how__step"><span>2</span> 也可以使用另一部裝置顯示 '
+        "<b>QR Code</b>，再由 ATAK 裝置掃描。</div>",
         "</div>",
         "",
     ]
 
-    # Filter bar: search box + category chips (only for categories present).
     present = [
         c
         for c in CATEGORY_ORDER
@@ -273,37 +306,65 @@ def render_maps_page(
             (descriptions.get(e["slug"]) or {}).get("category") == c for e in ordered
         )
     ]
-    chips = ['<button class="am-chip is-active" data-cat="all">All</button>']
+    chips = ['<button class="am-chip is-active" data-cat="all">全部類型</button>']
     chips += [
         f'<button class="am-chip" data-cat="{html.escape(c, quote=True)}">'
-        f"{html.escape(c)}</button>"
+        f"{html.escape(CATEGORY_LABELS.get(c, c))}</button>"
         for c in present
+    ]
+    package_buttons = [
+        f'<button class="am-pack-chip is-active" data-package="all">全部 {total}</button>'
+    ]
+    package_labels = {
+        "taiwan-essential": "臺灣精選",
+        "taiwan-tested": "臺灣測試",
+        "taiwan-source": "臺灣官方圖資",
+    }
+    package_buttons += [
+        f'<button class="am-pack-chip" data-package="{html.escape(key, quote=True)}">'
+        f"{html.escape(package_labels.get(key, key))} {len(slugs)}</button>"
+        for key, slugs in package_filters.items()
     ]
     out += [
         '<div class="am-filter">',
-        '  <input class="am-search" type="search" placeholder="Filter maps…" '
-        'aria-label="Filter maps by name">',
+        '  <input class="am-search" type="search" placeholder="搜尋地圖名稱、來源或說明…" '
+        'aria-label="依名稱搜尋地圖">',
+        '  <div class="am-filter__row"><span class="am-filter__label">版本</span>'
+        + '<div class="am-packages">' + "".join(package_buttons) + "</div></div>",
+        '  <div class="am-filter__row"><span class="am-filter__label">類型</span>'
         '  <div class="am-chips">' + "".join(chips) + "</div>",
+        "  </div>",
         "</div>",
-        '<p class="am-empty" hidden>No maps match your filter.</p>',
+        '<p class="am-empty" hidden>沒有符合篩選條件的地圖。</p>',
         "",
     ]
 
-    # Card grid.
     missing = [e for e in ordered if not descriptions.get(e["slug"])]
-    cards = [_card_html(e, descriptions.get(e["slug"]) or {}) for e in ordered]
+    memberships = {
+        entry["slug"]: {
+            key for key, slugs in package_filters.items() if entry["slug"] in slugs
+        }
+        for entry in ordered
+    }
+    cards = [
+        _card_html(
+            entry,
+            descriptions.get(entry["slug"]) or {},
+            memberships.get(entry["slug"]),
+        )
+        for entry in ordered
+    ]
     out += ['<div class="am-grid">', *cards, "</div>"]
 
-    # Lightbox: tap a small QR to enlarge it for scanning.
     out += [
         "",
         '<div class="am-lightbox" role="dialog" aria-modal="true" '
-        'aria-label="QR code">',
-        '  <button class="am-lightbox__close" aria-label="Close">&times;</button>',
+        'aria-label="QR Code">',
+        '  <button class="am-lightbox__close" aria-label="關閉">&times;</button>',
         '  <div class="am-lightbox__panel">',
         '    <img class="am-lightbox__img" src="" alt="">',
         '    <p class="am-lightbox__cap"></p>',
-        '    <p class="am-lightbox__hint">Scan with the ATAK device to install.</p>',
+        '    <p class="am-lightbox__hint">使用 ATAK 裝置掃描即可安裝。</p>',
         "  </div>",
         "</div>",
     ]

@@ -2,6 +2,7 @@
 """Build the complete and Taiwan-tested release ZIP archives."""
 
 import argparse
+import hashlib
 import sys
 from pathlib import Path
 
@@ -30,6 +31,15 @@ TAIWAN_ESSENTIAL_PROFILE = (
 )
 
 
+def write_checksums(package_paths: list[Path], output_path: Path) -> None:
+    """Write GNU-compatible SHA-256 checksums for release assets."""
+    lines = [
+        f"{hashlib.sha256(path.read_bytes()).hexdigest()}  {path.name}"
+        for path in package_paths
+    ]
+    output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -45,26 +55,35 @@ def main() -> None:
     taiwan_essential_maps = select_listed_profile_map_files(
         all_maps, REPO_ROOT, TAIWAN_ESSENTIAL_PROFILE
     )
+    all_package = args.output_dir / "atak-maps.zip"
+    taiwan_package = args.output_dir / "atak-maps-taiwan.zip"
+    taiwan_essential_package = (
+        args.output_dir / "atak-maps-taiwan-essential.zip"
+    )
     build_data_package(
         all_maps,
         REPO_ROOT,
-        args.output_dir / "atak-maps.zip",
+        all_package,
         package_uid=PACKAGE_UID,
         package_name=PACKAGE_NAME,
     )
     build_data_package(
         taiwan_maps,
         REPO_ROOT,
-        args.output_dir / "atak-maps-taiwan.zip",
+        taiwan_package,
         package_uid=TAIWAN_PACKAGE_UID,
         package_name=TAIWAN_PACKAGE_NAME,
     )
     build_data_package(
         taiwan_essential_maps,
         REPO_ROOT,
-        args.output_dir / "atak-maps-taiwan-essential.zip",
+        taiwan_essential_package,
         package_uid=TAIWAN_ESSENTIAL_PACKAGE_UID,
         package_name=TAIWAN_ESSENTIAL_PACKAGE_NAME,
+    )
+    write_checksums(
+        [all_package, taiwan_package, taiwan_essential_package],
+        args.output_dir / "SHA256SUMS",
     )
     print(
         f"Built ATAK Data Packages: all={len(all_maps)}, "

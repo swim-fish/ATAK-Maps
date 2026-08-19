@@ -10,16 +10,20 @@
     var empty = document.querySelector(".am-empty");
     var search = filter.querySelector(".am-search");
     var chips = Array.prototype.slice.call(filter.querySelectorAll(".am-chip"));
+    var packageChips = Array.prototype.slice.call(filter.querySelectorAll(".am-pack-chip"));
     var cards = grid ? Array.prototype.slice.call(grid.querySelectorAll(".am-card")) : [];
     var activeCat = "all";
+    var activePackage = "all";
 
     function apply() {
       var q = (search.value || "").trim().toLowerCase();
       var shown = 0;
       cards.forEach(function (card) {
         var catOk = activeCat === "all" || card.dataset.cat === activeCat;
+        var packages = (card.dataset.packages || "").split(/\s+/);
+        var packageOk = activePackage === "all" || packages.indexOf(activePackage) !== -1;
         var textOk = !q || (card.dataset.search || "").indexOf(q) !== -1;
-        var visible = catOk && textOk;
+        var visible = catOk && packageOk && textOk;
         card.classList.toggle("is-hidden", !visible);
         if (visible) shown++;
       });
@@ -31,6 +35,14 @@
         chips.forEach(function (c) { c.classList.remove("is-active"); });
         chip.classList.add("is-active");
         activeCat = chip.dataset.cat;
+        apply();
+      });
+    });
+    packageChips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        packageChips.forEach(function (c) { c.classList.remove("is-active"); });
+        chip.classList.add("is-active");
+        activePackage = chip.dataset.package;
         apply();
       });
     });
@@ -50,7 +62,7 @@
 
     function open(qr) {
       img.src = qr.getAttribute("src");
-      cap.textContent = (qr.getAttribute("alt") || "").replace(/^QR code to /, "");
+      cap.textContent = qr.getAttribute("alt") || "";
       lb.classList.add("is-open");
     }
     function close() { lb.classList.remove("is-open"); img.src = ""; }

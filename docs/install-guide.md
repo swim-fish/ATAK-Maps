@@ -1,122 +1,122 @@
-# Installing ATAK Maps
+# 安裝 ATAK 地圖
 
-## Quick Start
+## 快速開始
 
-1. Download the recommended `atak-maps-taiwan-essential.zip`, an extended Taiwan package, or the complete package from the [Releases page](https://github.com/joshuafuller/ATAK-Maps/releases).
-2. Open the ZIP in ATAK using **Import** — ATAK places the map files automatically.
-3. New map sources appear in the map layer selector.
+1. 下載建議使用的 [臺灣精選版](https://github.com/swim-fish/ATAK-Maps/releases/latest/download/atak-maps-taiwan-essential.zip)、[臺灣測試版](https://github.com/swim-fish/ATAK-Maps/releases/latest/download/atak-maps-taiwan.zip)或[完整版](https://github.com/swim-fish/ATAK-Maps/releases/latest/download/atak-maps.zip)。
+2. 在 ATAK 中使用「匯入」開啟 ZIP；ATAK 會自動放置地圖檔案。
+3. 完成後，地圖來源會顯示於「地圖與我的最愛」。
 
-That's it. ATAK's Import feature handles file placement for you.
+ATAK 的匯入功能會處理檔案位置，不必手動解壓縮。
 
-![Install Flow](images/install-flow.png)
+![安裝流程](images/install-flow.png)
 
-## Using ATAK Import (Recommended)
+## 使用 ATAK 匯入（建議）
 
-The easiest way to install maps is through ATAK's built-in Import feature:
+1. 將 ZIP 下載到 ATAK 裝置。
+2. 在 ATAK 點選「匯入」，或從檔案管理程式以 ATAK 開啟 ZIP。
+3. ATAK 會讀取資料集並自動加入地圖來源。
+4. 開啟「地圖與我的最愛」，確認新來源已出現。
 
-1. Download `atak-maps-taiwan-essential.zip`, `atak-maps-taiwan.zip`, or `atak-maps.zip` from the [Releases page](https://github.com/joshuafuller/ATAK-Maps/releases) onto your device.
-2. In ATAK, tap **Import** (or use your file manager to open the ZIP with ATAK).
-3. ATAK ingests the ZIP and the map sources populate automatically.
-4. Check the map layer selector — new sources should be listed.
+### 選擇版本
 
-No manual file copying required. ATAK handles sorting base maps and overlays into the correct locations.
+| 版本 | 檔案 | 來源數 | 適合對象 |
+|---|---|---:|---|
+| 臺灣精選版 | `atak-maps-taiwan-essential.zip` | 14 | 大多數臺灣使用者；包含 Google、NLSC 與備援來源 |
+| 臺灣測試版 | `atak-maps-taiwan.zip` | 32 | 需要更多全球來源，且只保留臺灣測試結果可用者 |
+| 完整版本 | `atak-maps.zip` | 52 | 需要其他國家圖資或自行設定 API 金鑰者 |
 
-## What's in the Download
+每個 ZIP 都是 ATAK Mission Package v2 資料集，內含一份
+`MANIFEST/manifest.xml`。地圖 XML 位於 `content/`，並宣告為 ATAK
+`External Native Data`。
 
-The release provides three ATAK Mission Package v2 ZIP archives:
+Release 另附
+[`SHA256SUMS`](https://github.com/swim-fish/ATAK-Maps/releases/latest/download/SHA256SUMS)，
+可確認下載檔案完整且未遭變更。
 
-- `atak-maps-taiwan-essential.zip` contains 14 commonly used Google, Taiwan NLSC, and fallback sources.
-- `atak-maps-taiwan.zip` contains the 32 sources approved by the [Taiwan coverage profile](taiwan-map-coverage.md).
-- `atak-maps.zip` contains all 52 available XML map sources.
+## 手動安裝
 
-Each archive contains exactly one `MANIFEST/manifest.xml`. Map XML files are
-stored under `content/` and declared as ATAK `External Native Data`.
+若只想安裝特定 XML，或裝置無法使用 ZIP 匯入，可手動放置檔案。
 
-- **Providers included:** Bing, Google, ESRI, USGS, OpenTopo, and others
-- **Two types of files:**
-  - **Base maps** — satellite imagery, street maps, topographic maps
-  - **Overlays** — transparent layers (flood zones, trails, reference grids) with filenames starting with `grg_`
+![目錄配置](images/directory-layout.png)
 
-## Manual Installation (Alternative)
+### 底圖
 
-If you prefer to place files manually or want to install only specific maps:
+將一般地圖來源 XML 複製到：
 
-![Directory Layout](images/directory-layout.png)
-
-### Base Maps
-
-Copy `.xml` files (anything **not** prefixed `grg_`) to:
-
-```
+```text
 <storage>/atak/imagery/mobile/mapsources/
 ```
 
-`<storage>` is your device's internal storage root (typically `/sdcard` or `/storage/emulated/0`). The alternate directory `<storage>/atak/mobac/mapsources/` also works.
+`<storage>` 是裝置的內部儲存空間根目錄，通常是 `/sdcard` 或
+`/storage/emulated/0`。ATAK 也支援
+`<storage>/atak/mobac/mapsources/`。
 
-### Overlays
+### 圖層
 
-Copy files starting with `grg_` (found in the `GRG/` folder) to:
+將 `GRG/` 目錄內以 `grg_` 開頭的 XML 複製到：
 
-```
+```text
 <storage>/atak/grg/
 ```
 
-These appear as overlay layers in ATAK, not base maps.
+這些檔案會顯示為可疊加的圖層，不會列為底圖。
 
-### Verify
+### 驗證安裝
 
-1. Open ATAK.
-2. Tap the map layer selector (layers icon).
-3. New map sources should be listed. Select one and confirm tiles load.
-4. For overlays, check the overlay manager.
+1. 開啟 ATAK。
+2. 點選圖層圖示，開啟「地圖與我的最愛」。
+3. 選取新地圖，確認圖磚能正常載入。
+4. 若是透明圖層，請在「圖層管理器」中確認。
 
-ATAK uses file system monitoring, so new map files may appear without restarting the app. If they don't show up, restart ATAK.
+ATAK 會監控地圖目錄，通常不必重新啟動。若來源沒有出現，請重新啟動
+ATAK，再檢查檔案位置。
 
-## Installing Individual Maps
+## 安裝單一地圖來源
 
-You don't have to install the entire collection:
+1. 在 [GitHub 專案](https://github.com/swim-fish/ATAK-Maps)中找到來源目錄。
+2. 只下載需要的 `.xml` 檔案。
+3. 使用 ATAK 匯入，或依前述目錄手動放置。
 
-1. Browse the repository folders on [GitHub](https://github.com/joshuafuller/ATAK-Maps).
-2. Download just the `.xml` files you want.
-3. Either import them via ATAK, or manually place them in the directories above.
+## 建立離線地圖快取
 
-## Offline Caching
+ATAK 會自動快取已檢視的圖磚。若要事先下載任務區域：
 
-ATAK automatically caches map tiles you view. To proactively cache an area for offline use:
+1. 開啟「地圖與我的最愛」，選取要下載的地圖來源。
+2. 進入 Map Manager，或長按地圖圖層。
+3. 點選「下載」，並在地圖上框選範圍。
+4. 選取需要的縮放層級後開始下載。
+5. ATAK 會將圖磚儲存於裝置的 SQLite 資料庫，離線後仍可使用。
 
-1. In ATAK, open the map layer selector and choose the map source you want to cache.
-2. Navigate to **Map Manager** (or long-press on the map layer).
-3. Select **Download** and draw a region on the map.
-4. Choose the zoom levels you need and start the download.
-5. Cached tiles are stored in SQLite databases on your device and persist when you go offline.
+下載前請確認來源服務的使用條款允許離線快取。
 
-Once cached, those tiles are available with no internet connection.
+## 疑難排解
 
-## Troubleshooting
+### 匯入後沒有顯示地圖
 
-### Maps don't appear after import
+- 重新啟動 ATAK。
+- 手動安裝時，確認 XML 位於正確目錄。
+- 在 ATAK 的「設定 > 顯示記錄」檢視載入錯誤。
+- 確認 ZIP 內有 `MANIFEST/manifest.xml`，且不是一般壓縮檔。
 
-- Try restarting ATAK.
-- If using manual install, confirm files are in the correct directory.
-- Check ATAK logs (Settings > Show Log) for errors loading map sources.
+### 圖磚呈現黑色或空白
 
-### Tiles show as black or blank
+- 地圖伺服器可能暫時離線或阻擋 ATAK 請求。
+- 檢查裝置網路連線與系統時間。
+- 部分 OpenStreetMap 服務會限制大量或非瀏覽器請求。
+- 區域性來源在臺灣顯示空白不代表服務故障；請參考
+  [臺灣涵蓋範圍](taiwan-map-coverage.md)。
 
-- The map server may be down or blocking requests.
-- Check your internet connection.
-- Some sources (notably OpenStreetMap) may restrict access from ATAK. These files are included for reference but may not always work.
+### 手動安裝目錄錯誤
 
-### Wrong directory (manual install)
+| 檔案類型 | 正確目錄 | 常見錯誤 |
+|---|---|---|
+| 底圖（`.xml`） | `atak/imagery/mobile/mapsources/` | 放在不會掃描的上層 `atak/imagery/` |
+| 圖層（`grg_*.xml`） | `atak/grg/` | 放入底圖目錄 |
 
-| File type | Correct directory | Common mistake |
-|-----------|-------------------|----------------|
-| Base maps (`.xml`) | `atak/imagery/mobile/mapsources/` | `atak/imagery/` (parent dir — won't be scanned) |
-| Overlays (`grg_*.xml`) | `atak/grg/` | `atak/imagery/mobile/mapsources/` |
+### 支援的副檔名
 
-### Accepted file extensions
-
-| Extension | Description |
-|-----------|-------------|
-| `.xml` | Standard map source (this is what ATAK-Maps provides) |
-| `.xmle` | Encrypted XML map source |
-| `.bsh` | BeanShell scripted map source |
+| 副檔名 | 說明 |
+|---|---|
+| `.xml` | 標準地圖來源；本專案主要提供此格式 |
+| `.xmle` | 加密 XML 地圖來源 |
+| `.bsh` | BeanShell 指令碼地圖來源 |

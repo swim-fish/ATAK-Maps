@@ -49,6 +49,10 @@ TAIWAN_ESSENTIAL_PROFILE_FILE = (
 )
 # The Maps page renders at /maps/ (pretty URLs); assets live one level up.
 ALL_MAPS_QR = "../qr/_all-maps.png"
+TAIWAN_MAPS_QR = "../qr/_taiwan-maps.png"
+TAIWAN_ESSENTIAL_MAPS_QR = "../qr/_taiwan-essential-maps.png"
+README_PACKAGE_QR = REPO_ROOT / "images" / "add-to-atak.png"
+LANDING_PACKAGE_QR = DOCS / "images" / "add-to-atak.png"
 
 
 def write_qr(data: str, out_path: Path) -> None:
@@ -77,6 +81,10 @@ def main() -> None:
         map_files, REPO_ROOT, TAIWAN_ESSENTIAL_PROFILE_FILE
     )
     entries = [build_map_entry(f, REPO_ROOT) for f in map_files]
+    entries_by_path = {
+        path.relative_to(REPO_ROOT).as_posix(): entry
+        for path, entry in zip(map_files, entries)
+    }
     for e in entries:
         write_qr(e["import_uri"], QR_DIR / f"{e['slug']}.png")
     # Publish a copy of each source XML on the site so ATAK fetches it with an
@@ -108,7 +116,10 @@ def main() -> None:
         package_name=TAIWAN_ESSENTIAL_PACKAGE_NAME,
     )
     # QR for the whole-map-pack, shown in the Maps-page hero.
-    write_qr(package_import_uri(), QR_DIR / "_all-maps.png")
+    all_maps_uri = package_import_uri()
+    write_qr(all_maps_uri, QR_DIR / "_all-maps.png")
+    write_qr(all_maps_uri, README_PACKAGE_QR)
+    write_qr(all_maps_uri, LANDING_PACKAGE_QR)
     write_qr(taiwan_package_import_uri(), QR_DIR / "_taiwan-maps.png")
     write_qr(
         taiwan_essential_package_import_uri(),
@@ -118,12 +129,49 @@ def main() -> None:
     missing = [e["slug"] for e in entries if not descriptions.get(e["slug"])]
     if missing:
         print(f"WARNING: {len(missing)} maps without a description: {missing}")
+    package_filters = {
+        "taiwan-essential": {
+            entries_by_path[path.relative_to(REPO_ROOT).as_posix()]["slug"]
+            for path in taiwan_essential_map_files
+        },
+        "taiwan-tested": {
+            entries_by_path[path.relative_to(REPO_ROOT).as_posix()]["slug"]
+            for path in taiwan_map_files
+        },
+        "taiwan-source": {
+            entry["slug"] for entry in entries if entry["provider"] == "TaiwanMaps"
+        },
+    }
+    package_choices = [
+        {
+            "title": "臺灣精選版",
+            "description": "Google、國土測繪中心與全球備援來源，適合大多數臺灣使用者。",
+            "count": len(taiwan_essential_map_files),
+            "uri": taiwan_essential_package_import_uri(),
+            "qr": TAIWAN_ESSENTIAL_MAPS_QR,
+            "recommended": True,
+        },
+        {
+            "title": "臺灣測試版",
+            "description": "在臺中測試點確認可用或具有臺灣內容的擴充地圖來源。",
+            "count": len(taiwan_map_files),
+            "uri": taiwan_package_import_uri(),
+            "qr": TAIWAN_MAPS_QR,
+        },
+        {
+            "title": "完整版本",
+            "description": "收錄全部地圖來源，包含僅適用其他國家或需要 API 金鑰的來源。",
+            "count": len(map_files),
+            "uri": package_import_uri(),
+            "qr": ALL_MAPS_QR,
+        },
+    ]
     (DOCS / "maps.md").write_text(
         render_maps_page(
             entries,
             descriptions=descriptions,
-            package_uri=package_import_uri(),
-            package_qr=ALL_MAPS_QR,
+            package_choices=package_choices,
+            package_filters=package_filters,
         )
     )
     print(

@@ -1,9 +1,9 @@
-# Triggers whenever an XML map file is pushed to `master`
-# (or when you run the workflow manually).
+# Triggers for every push to `master` (or when run manually). semantic-release
+# decides whether the Conventional Commits since the last tag warrant a release.
 #
 # Flow:
 #   1. Sanity-check: latest git tag must be on this branch
-#   2. Builds complete and Taiwan ATAK Mission Package v2 ZIPs
+#   2. Builds complete and Taiwan ATAK Mission Package v2 ZIPs + checksums
 #   3. semantic-release
 #        • calculates the next SemVer
 #        • tags the commit
@@ -18,14 +18,11 @@ name: Map Release
 on:
   push:
     branches: [master]
-    paths:
-      - "**/*.xml"
-      - "map-tests/taiwan-taichung.json"
-      - "package-profiles/**"
-      - "mapvalidator/catalog.py"
-      - "mapvalidator/data_package.py"
-      - "scripts/build_release_packages.py"
   workflow_dispatch:
+
+concurrency:
+  group: map-release
+  cancel-in-progress: false
 
 jobs:
   release:
@@ -33,7 +30,6 @@ jobs:
 
     permissions:
       contents: write
-      issues:   write
 
     steps:
       - uses: actions/checkout@v4
@@ -61,7 +57,25 @@ jobs:
       - name: Build map ZIPs
         run: python3 scripts/build_release_packages.py
 
+      - name: Upload release candidates
+        uses: actions/upload-artifact@v4
+        with:
+          name: atak-map-release-files
+          path: |
+            dist/atak-maps.zip
+            dist/atak-maps-taiwan.zip
+            dist/atak-maps-taiwan-essential.zip
+            dist/SHA256SUMS
+          if-no-files-found: error
+          retention-days: 14
+
       - name: semantic-release
-        uses: cycjimmy/semantic-release-action@v4
+        id: semantic
+        uses: cycjimmy/semantic-release-action@v6
+        with:
+          semantic_version: ^25.0.0
+          extra_plugins: |
+            @semantic-release/changelog@6
+            @semantic-release/git@10
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

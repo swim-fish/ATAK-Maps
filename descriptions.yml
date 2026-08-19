@@ -1,163 +1,162 @@
-# Map catalog metadata for the Maps page, keyed by map slug.
-# Community-editable: add an entry when you add a map.
-#   category: one of Satellite | Topographic | Street | Nautical |
-#             Cycling | Overlay | Land use   (used for grouping/filter)
-#   text:     one-line description shown under the map
-# A missing slug just omits the card detail (the generator warns about it).
+# Maps 分頁使用的地圖目錄中繼資料，以地圖 slug 為索引。
+# 新增地圖時，請同步新增對應項目。
+#   category: Satellite | Topographic | Street | Nautical |
+#             Cycling | Overlay | Land use（程式內部分類，不翻譯）
+#   text:     顯示於地圖卡片下方的臺灣繁體中文簡介
 
 blm-blm-land-ownership-sma:
   category: Land use
-  text: "Federal & state land ownership shaded by managing agency (BLM, USFS, NPS, BIA, state, private) — opaque basemap, United States."
+  text: "依管理機關標示美國聯邦與州有土地權屬，包含 BLM、USFS、NPS、BIA、州政府及私人土地。"
 blm-blm-satellite-land-ownership:
   category: Land use
-  text: "Esri satellite imagery with BLM land-ownership colours blended on top at 50% — United States."
+  text: "Esri 衛星影像搭配 50% 透明度的 BLM 土地權屬色彩，適用於美國。"
 bing-bing-hybrid:
   category: Satellite
-  text: "Bing satellite imagery with roads and labels overlaid — global."
+  text: "Bing 全球衛星影像，疊加道路與地名標示。"
 bing-bing-maps:
   category: Street
-  text: "Bing road/street map — global."
+  text: "Bing 全球道路與街道圖。"
 bing-bing-satellite:
   category: Satellite
-  text: "Bing satellite/aerial imagery, no labels — global."
+  text: "Bing 全球衛星及航空影像，不含地名標示。"
 esri-esri-clarity:
   category: Satellite
-  text: "Esri World Imagery (Clarity) — high-resolution satellite/aerial, global."
+  text: "Esri World Imagery（Clarity）全球高解析度衛星及航空影像。"
 esri-esri-nat-geo-world:
   category: Street
-  text: "National Geographic-styled reference map — terrain, roads and boundaries, global."
+  text: "National Geographic 風格的全球參考地圖，包含地形、道路與行政界線。"
 esri-esri-usa-topo-maps:
   category: Topographic
-  text: "Esri USA Topo — classic USGS-style topographic quads, United States."
+  text: "Esri USA Topo，美國 USGS 傳統地形圖樣式。"
 esri-esri-world-topo:
   category: Topographic
-  text: "Esri World Topographic — roads, terrain, boundaries and labels, global."
+  text: "Esri 全球地形圖，包含道路、地形、行政界線與地名。"
 grg-grg-fema-nfhl-flood-hazard-zones:
   category: Overlay
-  text: "FEMA National Flood Hazard Layer — flood-zone overlay, transparent, United States."
+  text: "FEMA 國家洪水災害圖層，美國透明洪水風險區圖層。"
 grg-grg-bc-wildfire-perimeters-current:
   category: Overlay
-  text: "Current British Columbia wildfire perimeters (DataBC) — transparent overlay."
+  text: "DataBC 提供的加拿大卑詩省目前野火範圍透明圖層。"
 grg-grg-blm-public-lands-overlay:
   category: Overlay
-  text: "BLM public-lands ownership as a transparent overlay — colour = public land, clear = private."
+  text: "BLM 公有土地透明圖層；有色區域為公有土地，透明區域為私人土地。"
 grg-grg-google-road-only-overlay:
   category: Overlay
-  text: "Google roads and labels only, transparent — drop over any imagery basemap."
+  text: "僅顯示 Google 道路與地名的透明圖層，可疊加於其他影像底圖。"
 grg-grg-google-terrain-shading-overlay:
   category: Overlay
-  text: "Google terrain hillshade as a transparent overlay."
+  text: "Google 地形陰影透明圖層。"
 grg-grg-waymarkedtrails-cycle-routes-overlay:
   category: Cycling
-  text: "Signed cycle routes (WaymarkedTrails) as a transparent overlay — best coverage in Europe."
+  text: "Waymarked Trails 自行車路線透明圖層，歐洲涵蓋較完整。"
 google-google-hybrid:
   category: Satellite
-  text: "Google satellite imagery with roads and labels — global."
+  text: "Google 全球衛星影像，疊加道路與地名標示。"
 google-google-hybrid-no-poi:
   category: Satellite
-  text: "Google satellite imagery with roads and labels but without points of interest — Traditional Chinese labels."
+  text: "Google 衛星影像與道路標示，不顯示景點，採臺灣繁體中文標籤。"
 google-google-roadmap-alt:
   category: Street
-  text: "Google road map, alternate styling — global."
+  text: "Google 全球道路圖的替代樣式。"
 google-google-roadmap-no-poi:
   category: Street
-  text: "Google road map with points-of-interest removed for cleaner streets — global."
+  text: "Google 道路圖，不顯示景點，畫面較簡潔。"
 google-google-roadmap-standard:
   category: Street
-  text: "Standard Google road/street map — global."
+  text: "標準 Google 全球道路與街道圖。"
 google-google-satellite-only:
   category: Satellite
-  text: "Google satellite/aerial imagery, no labels — global."
+  text: "Google 全球衛星及航空影像，不含地名標示。"
 google-google-terrain:
   category: Topographic
-  text: "Google terrain map — shaded relief with roads, global."
+  text: "Google 全球地形圖，包含陰影地形與道路。"
 naip-naip-usda-conusprime:
   category: Satellite
-  text: "USDA NAIP — high-resolution leaf-on aerial orthophotos, continental United States."
+  text: "USDA NAIP 美國本土高解析度航空正射影像。"
 naturalresourcescanada-naturalresourcescanada-cbmt:
   category: Street
-  text: "Canada Base Map – Transportation (NRCan) — roads and reference, Canada."
+  text: "加拿大自然資源部官方交通底圖，包含道路與參考資訊。"
 naturalresourcescanada-naturalresourcescanada-toporama:
   category: Topographic
-  text: "Toporama (NRCan) — official Canadian topographic map."
+  text: "Toporama，加拿大自然資源部官方地形圖。"
 ordnancesurvey-os-light-3857:
   category: Street
-  text: "Ordnance Survey Light — minimal low-contrast basemap of Great Britain. Free OS API key required."
+  text: "英國 Ordnance Survey 低對比簡潔底圖，需要免費 OS API 金鑰。"
 ordnancesurvey-os-outdoor-3857:
   category: Topographic
-  text: "Ordnance Survey Outdoor — footpaths, contours and leisure detail, Great Britain. Free OS API key required."
+  text: "英國 Ordnance Survey 戶外地圖，包含步道、等高線與休閒資訊，需要免費 OS API 金鑰。"
 ordnancesurvey-os-road-3857:
   category: Street
-  text: "Ordnance Survey Road — road/street map of Great Britain. Free OS API key required."
+  text: "英國 Ordnance Survey 道路與街道圖，需要免費 OS API 金鑰。"
 poland-pl-geoportal-ortofoto-standard-epsg3857:
   category: Satellite
-  text: "Polish Geoportal orthophoto — high-resolution aerial imagery, Poland."
+  text: "波蘭 Geoportal 高解析度航空正射影像。"
 basemapde-basemapde-raster-farbe:
   category: Street
-  text: "basemap.de raster (colour) — official German government topographic basemap."
+  text: "德國政府官方 basemap.de 彩色點陣底圖。"
 basemapde-basemapde-raster-grau:
   category: Street
-  text: "basemap.de raster (grayscale) — muted German government basemap, good under overlays."
+  text: "德國政府官方 basemap.de 灰階點陣底圖，適合疊加其他圖層。"
 cycleosm-cycleosm-osm-cycle:
   category: Cycling
-  text: "CyclOSM — cycling-oriented OpenStreetMap style highlighting bike infrastructure, global."
+  text: "CyclOSM 全球自行車地圖，強調 OpenStreetMap 的自行車基礎設施。"
 michelin-michelin-osm-michelin:
   category: Street
-  text: "Michelin-styled OpenStreetMap road map — global."
+  text: "Michelin 風格的全球 OpenStreetMap 道路圖。"
 mtbmapcz-mtbmapcz-mtb-map-europe:
   category: Cycling
-  text: "MTBMap.cz — mountain-bike map with singletrack and trail difficulty, Europe."
+  text: "MTBMap.cz 歐洲登山自行車地圖，包含單線步道與難度資訊。"
 openseamap-openseamap-base-chart:
   category: Nautical
-  text: "OpenSeaMap base chart — OpenStreetMap land with marine styling."
+  text: "OpenSeaMap 基礎航海圖，以 OpenStreetMap 陸地資料搭配航海樣式。"
 openseamap-openseamap-seamarks:
   category: Nautical
-  text: "OpenSeaMap seamarks — buoys, lights and depths as a transparent overlay, global."
+  text: "OpenSeaMap 全球航標透明圖層，包含浮標、燈號與水深資訊。"
 opentopo-opentopo-opentopomap:
   category: Topographic
-  text: "OpenTopoMap — topographic style over OSM with contours and hillshade, global."
+  text: "OpenTopoMap 全球地形圖，結合 OSM、等高線與地形陰影。"
 taiwanmaps-taiwan-gov-area-wmts:
   category: Overlay
-  text: "Taiwan government-area boundaries from the National Land Surveying and Mapping Center (NLSC)."
+  text: "內政部國土測繪中心（NLSC）提供的臺灣行政區界透明圖層。"
 taiwanmaps-taiwan-village-wmts:
   category: Overlay
-  text: "Taiwan village boundaries from the National Land Surveying and Mapping Center (NLSC)."
+  text: "內政部國土測繪中心（NLSC）提供的臺灣村里界透明圖層。"
 taiwanmaps-taiwan-emap5:
   category: Street
-  text: "Taiwan EMAP5 basemap from the National Land Surveying and Mapping Center (NLSC)."
+  text: "內政部國土測繪中心（NLSC）臺灣通用電子地圖 EMAP5。"
 taiwanmaps-taiwan-emap8-en:
   category: Street
-  text: "English-labelled Taiwan EMAP8 basemap from the National Land Surveying and Mapping Center (NLSC)."
+  text: "內政部國土測繪中心（NLSC）臺灣通用電子地圖 EMAP8 英文版。"
 taiwanmaps-taiwan-emap96:
   category: Street
-  text: "Taiwan EMAP96 basemap from the National Land Surveying and Mapping Center (NLSC)."
+  text: "內政部國土測繪中心（NLSC）臺灣通用電子地圖 EMAP96。"
 taiwanmaps-taiwan-emap98:
   category: Street
-  text: "Taiwan EMAP98 basemap from the National Land Surveying and Mapping Center (NLSC)."
+  text: "內政部國土測繪中心（NLSC）臺灣通用電子地圖 EMAP98。"
 taiwanmaps-taiwan-b5000:
   category: Topographic
-  text: "Taiwan B5000 map layer from the National Land Surveying and Mapping Center (NLSC)."
+  text: "內政部國土測繪中心（NLSC）臺灣五千分之一基本地形圖。"
 taiwanmaps-taiwan-emap7-en-transparent:
   category: Overlay
-  text: "Transparent English-labelled Taiwan map layer based on the NLSC EMAP7 service."
+  text: "以 NLSC EMAP7 服務製作的臺灣英文透明地圖圖層。"
 taiwanmaps-taiwan-emap2-transparent:
   category: Overlay
-  text: "Transparent Taiwan map layer based on the NLSC EMAP2 service."
+  text: "以 NLSC EMAP2 服務製作的臺灣透明地圖圖層。"
 taiwanmaps-taiwan-photo-mix:
   category: Satellite
-  text: "Taiwan aerial imagery with map labels from the NLSC PHOTO_MIX service."
+  text: "NLSC PHOTO_MIX 臺灣航空影像，疊加地圖標示。"
 taiwanmaps-taiwan-photo:
   category: Satellite
-  text: "Taiwan aerial imagery from the NLSC PHOTO2 service."
+  text: "NLSC PHOTO2 臺灣航空影像。"
 usgs-usgs-usgsbasemap:
   category: Topographic
-  text: "USGS The National Map topographic basemap — United States."
+  text: "USGS The National Map 美國地形底圖。"
 usgs-usgs-usgsimageryonly:
   category: Satellite
-  text: "USGS aerial imagery only, no labels — United States."
+  text: "USGS 美國航空影像，不含地名標示。"
 usgs-usgs-usgsimagerytopo:
   category: Satellite
-  text: "USGS aerial imagery with topographic labels and features blended — United States."
+  text: "USGS 美國航空影像，混合地形標示與地物資訊。"
 usgs-usgs-usgsshadedrelief:
   category: Topographic
-  text: "USGS shaded relief — terrain hillshade, United States."
+  text: "USGS 美國地形陰影圖。"

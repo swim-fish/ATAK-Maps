@@ -1,11 +1,12 @@
-site_name: ATAK-Maps
-site_description: Map sources for ATAK — install by QR code or one tap.
-site_url: https://joshuafuller.github.io/ATAK-Maps/
-repo_url: https://github.com/joshuafuller/ATAK-Maps
+site_name: ATAK 臺灣地圖來源
+site_description: 適用於 ATAK 的臺灣地圖來源，可使用 QR Code 或一鍵連結快速匯入。
+site_url: https://swim-fish.github.io/ATAK-Maps/
+repo_url: https://github.com/swim-fish/ATAK-Maps
 docs_dir: docs
 
 theme:
   name: material
+  language: zh-TW
   logo: images/atak-maps-logo.png
   favicon: images/atak-maps-logo.png
   font:
@@ -16,12 +17,12 @@ theme:
       primary: blue grey
       toggle:
         icon: material/weather-night
-        name: Switch to dark mode
+        name: 切換至深色模式
     - scheme: slate
       primary: blue grey
       toggle:
         icon: material/weather-sunny
-        name: Switch to light mode
+        name: 切換至淺色模式
   features:
     - navigation.instant
     - navigation.top
@@ -29,13 +30,14 @@ theme:
     - content.code.copy
 
 nav:
-  - Home: index.md
-  - Maps: maps.md
-  - Installation: install-guide.md
-  - Taiwan Coverage: taiwan-map-coverage.md
-  - Creating Custom Maps: creating-custom-maps.md
-  - XML Reference: xml-reference.md
-  - Releases: release-guide.md
+  - 首頁: index.md
+  - 地圖: maps.md
+  - 安裝指南: install-guide.md
+  - 臺灣涵蓋範圍: taiwan-map-coverage.md
+  - 建立地圖來源: creating-custom-maps.md
+  - XML 參考: xml-reference.md
+  - 發布新版本: release-guide.md
+  - 翻譯對照表: translation-glossary.md
 
 exclude_docs: |
   superpowers/

@@ -110,7 +110,7 @@ def _find_open_issues(repo: str) -> list[dict]:
 
 def manage_github_issues(
     probes: list[ProbeResult],
-    repo: str = "joshuafuller/ATAK-Maps",
+    repo: str = "swim-fish/ATAK-Maps",
 ) -> None:
     """Create or close GitHub issues based on probe results using the gh CLI."""
     if not probes:

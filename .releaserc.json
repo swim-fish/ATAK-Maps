@@ -11,8 +11,7 @@
           { "type": "perf", "release": "patch" },
           { "type": "docs", "release": false },
           { "type": "ci", "release": false },
-          { "type": "chore", "release": false },
-          { "message": "*", "release": "patch" }
+          { "type": "chore", "release": false }
         ]
       }
     ],
@@ -43,6 +42,11 @@
             "path": "dist/atak-maps-taiwan-essential.zip",
             "name": "atak-maps-taiwan-essential.zip",
             "label": "atak-maps-taiwan-essential.zip (recommended for Taiwan)"
+          },
+          {
+            "path": "dist/SHA256SUMS",
+            "name": "SHA256SUMS",
+            "label": "SHA-256 checksums"
           }
         ],
         "failComment": false,

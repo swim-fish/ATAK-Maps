@@ -5,6 +5,7 @@ __pycache__/
 
 # Generated Pages site artefacts
 /site/
+/dist/
 /docs/qr/
 /docs/maps.md
 /docs/sources/

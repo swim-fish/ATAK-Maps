@@ -41,6 +41,31 @@
   padding: 8px; box-shadow: 0 6px 24px rgba(0,0,0,.18); flex: 0 0 auto;
 }
 
+/* ---- Taiwan-first package chooser ---- */
+.am-package-section { margin: 0 0 1.6rem; }
+.am-package-section > p { color: var(--am-muted); }
+.am-package-grid {
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.am-package-card {
+  position: relative; padding: 1.1rem; border: 1px solid var(--am-line);
+  border-radius: var(--am-radius); background: var(--am-card-bg);
+}
+.am-package-card--recommended {
+  border-color: var(--am-action);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--am-action) 35%, transparent);
+}
+.am-package-card__badge {
+  position: absolute; top: .7rem; right: .7rem;
+  padding: .16rem .55rem; border-radius: 999px;
+  color: #fff; background: var(--am-action); font-size: .68rem; font-weight: 700;
+}
+.am-package-card h3 { margin: 0 0 .35rem; }
+.am-package-card p { min-height: 3.8em; color: var(--am-muted); font-size: .84rem; }
+.am-package-card__actions { display: flex; align-items: center; gap: .7rem; }
+.am-package-card__actions .am-btn { flex: 1 1 auto; justify-content: center; }
+
 /* ---- How it works ---- */
 .am-how {
   display: flex; flex-wrap: wrap; gap: .6rem 1.4rem;
@@ -63,6 +88,13 @@
   margin: 0 0 1.1rem; padding: .5rem 0;
   background: var(--md-default-bg-color);
 }
+.am-filter__row {
+  display: flex; flex: 1 1 100%; flex-wrap: wrap; gap: .5rem;
+  align-items: center;
+}
+.am-filter__label {
+  min-width: 2.2rem; color: var(--am-muted); font-size: .72rem; font-weight: 700;
+}
 .am-search {
   flex: 1 1 220px; min-width: 180px;
   padding: .5rem .8rem; font: inherit; color: inherit;
@@ -70,15 +102,17 @@
   background: var(--am-card-bg);
 }
 .am-search:focus { outline: 2px solid var(--am-action); outline-offset: 1px; }
-.am-chips { display: flex; flex-wrap: wrap; gap: .4rem; }
-.am-chip {
+.am-chips, .am-packages { display: flex; flex-wrap: wrap; gap: .4rem; }
+.am-chip, .am-pack-chip {
   padding: .32rem .78rem; font: inherit; font-size: .78rem; font-weight: 600;
   color: var(--am-muted); cursor: pointer;
   border: 1px solid var(--am-line-strong); border-radius: 999px;
   background: transparent; transition: all .12s ease;
 }
-.am-chip:hover { border-color: var(--am-action); color: var(--md-default-fg-color); }
-.am-chip.is-active {
+.am-chip:hover, .am-pack-chip:hover {
+  border-color: var(--am-action); color: var(--md-default-fg-color);
+}
+.am-chip.is-active, .am-pack-chip.is-active {
   background: var(--am-action); border-color: var(--am-action); color: #fff;
 }
 .am-empty { color: var(--am-muted); font-style: italic; }

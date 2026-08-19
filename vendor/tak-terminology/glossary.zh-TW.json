@@ -1,0 +1,5574 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "1.0.0",
+  "locale": "zh-TW",
+  "terms": {
+    "atak.action-menu": {
+      "english": "Action Menu",
+      "translation": "Action 選單",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "ATAK 中開啟各項工具的選單",
+      "scope_notes": {}
+    },
+    "atak.active-shooter": {
+      "english": "Active Shooter",
+      "translation": "活躍射手",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.aes-256": {
+      "english": "AES-256",
+      "translation": "AES-256 加密",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "進階加密標準",
+      "scope_notes": {}
+    },
+    "atak.aircraft": {
+      "english": "Aircraft",
+      "translation": "航空器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.app-preferences": {
+      "english": "App Preferences",
+      "translation": "應用程式偏好設定",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "ATAK `.pref` 中的應用程式設定群組",
+      "scope_notes": {}
+    },
+    "atak.app-switcher": {
+      "english": "App Switcher",
+      "translation": "應用程式切換",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.atak-geochat": {
+      "english": "ATAK GeoChat",
+      "translation": "ATAK 地理聊天",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.audible-chat-notifications": {
+      "english": "Audible Chat Notifications",
+      "translation": "聲音聊天通知",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "device-system-settings"
+      ],
+      "kind": "setting",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.audio": {
+      "english": "Audio",
+      "translation": "音訊",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "device-system-settings"
+      ],
+      "kind": "setting",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.back": {
+      "english": "Back",
+      "translation": "返回",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.billboard": {
+      "english": "Billboard",
+      "translation": "3D 看板",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "路線導航中的影像彈出功能",
+      "scope_notes": {}
+    },
+    "atak.briefing-graphics": {
+      "english": "Briefing Graphics",
+      "translation": "簡報圖形",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.brightness": {
+      "english": "Brightness",
+      "translation": "亮度",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.bullseye": {
+      "english": "Bullseye",
+      "translation": "牛眼環",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.ca-trust-store": {
+      "english": "CA Trust Store",
+      "translation": "CA 信任儲存區",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "儲存受信任 CA 憑證的檔案",
+      "scope_notes": {}
+    },
+    "atak.cardinal-direction": {
+      "english": "Cardinal Direction",
+      "translation": "方位",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.casevac-casualty-evacuation": {
+      "english": "CASEVAC (Casualty Evacuation)",
+      "translation": "傷患後送",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.casevac-tool": {
+      "english": "CASEVAC Tool",
+      "translation": "傷患後送工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "Casualty Evacuation",
+      "scope_notes": {}
+    },
+    "atak.cbrn": {
+      "english": "CBRN",
+      "translation": "化生輻核",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "Chemical, Biological, Radiological, Nuclear",
+      "scope_notes": {}
+    },
+    "atak.center-designator": {
+      "english": "Center Designator",
+      "translation": "中心標記",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.certificate-enrollment": {
+      "english": "Certificate Enrollment",
+      "translation": "憑證註冊",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "由憑證服務申請並安裝用戶端憑證的流程",
+      "scope_notes": {}
+    },
+    "atak.change-coordinates": {
+      "english": "Change Coordinates",
+      "translation": "變更座標",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.chat-tool": {
+      "english": "Chat Tool",
+      "translation": "Chat 工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.client-certificate-store": {
+      "english": "Client Certificate Store",
+      "translation": "用戶端憑證儲存區",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "儲存用戶端憑證與私密金鑰的檔案",
+      "scope_notes": {}
+    },
+    "atak.closing-distance": {
+      "english": "Closing Distance",
+      "translation": "剩餘距離",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.color-pin-wheel": {
+      "english": "Color Pin Wheel",
+      "translation": "色輪",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.companion-app": {
+      "english": "Companion App",
+      "translation": "伴侶應用程式",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.concentric-circles": {
+      "english": "Concentric Circles",
+      "translation": "同心環",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.confirmed-fatality-cf": {
+      "english": "Confirmed Fatality (CF)",
+      "translation": "確認死亡",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.confirmed-victim-cv": {
+      "english": "Confirmed Victim (CV)",
+      "translation": "確認傷患",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.content-type": {
+      "english": "Content Type",
+      "translation": "內容類型",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "Manifest 用來篩選匯入解析器的精確字串",
+      "scope_notes": {}
+    },
+    "atak.contour-lines": {
+      "english": "Contour Lines",
+      "translation": "等高線",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.control-preferences": {
+      "english": "Control Preferences",
+      "translation": "控制偏好設定",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.convert-coordinate": {
+      "english": "Convert Coordinate",
+      "translation": "座標轉換",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.cop-refresh": {
+      "english": "COP Refresh",
+      "translation": "COP 重新整理",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "Common Operating Picture",
+      "scope_notes": {}
+    },
+    "atak.cue": {
+      "english": "Cue",
+      "translation": "提示",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "路線點位的導航提示",
+      "scope_notes": {}
+    },
+    "atak.datasync-feeds": {
+      "english": "DataSync Feeds",
+      "translation": "資料同步頻道",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.deep-link": {
+      "english": "Deep Link",
+      "translation": "深層連結",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "由 Android 開啟 ATAK 特定功能的 URI",
+      "scope_notes": {}
+    },
+    "atak.device-profile": {
+      "english": "Device Profile",
+      "translation": "裝置設定檔",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "由 TAK Server 下發的裝置設定內容",
+      "scope_notes": {}
+    },
+    "atak.dpk-builder": {
+      "english": "DPK Builder",
+      "translation": "DPK 打包器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "建立 Manifest、封裝資料並輸出 DPK 的工具",
+      "scope_notes": {}
+    },
+    "atak.dpk-data-package": {
+      "english": "DPK (Data Package)",
+      "translation": "DPK 資料集檔案",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "ATAK 使用的 ZIP 型資料集容器，常用副檔名為 `.dpk`",
+      "scope_notes": {}
+    },
+    "atak.dpk-validator": {
+      "english": "DPK Validator",
+      "translation": "DPK 驗證器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "驗證 ZIP、Manifest 與封裝內容的工具",
+      "scope_notes": {}
+    },
+    "atak.draw": {
+      "english": "Draw",
+      "translation": "自由繪製",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.drop-tab": {
+      "english": "Drop Tab",
+      "translation": "Drop 分頁",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "WASP 放置標記分頁",
+      "scope_notes": {}
+    },
+    "atak.dted": {
+      "english": "DTED",
+      "translation": "數位地形高程資料",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "Digital Terrain Elevation Data",
+      "scope_notes": {}
+    },
+    "atak.dynamic-points": {
+      "english": "Dynamic Points",
+      "translation": "動態雙點測量",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.elevation-heat-map": {
+      "english": "Elevation Heat Map",
+      "translation": "高程熱圖",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.elevation-manager": {
+      "english": "Elevation Manager",
+      "translation": "高程管理器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.elevation-profile": {
+      "english": "Elevation Profile",
+      "translation": "高程剖面",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.elevation-tools": {
+      "english": "Elevation Tools",
+      "translation": "高程工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.encrypted-mesh": {
+      "english": "Encrypted Mesh",
+      "translation": "加密網狀網路",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.end-editing": {
+      "english": "End Editing",
+      "translation": "結束編輯",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.end-shape": {
+      "english": "End Shape",
+      "translation": "結束形狀",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.escape-route": {
+      "english": "Escape Route",
+      "translation": "逃生路線",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.extent": {
+      "english": "Extent",
+      "translation": "範圍",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.extrude-mode": {
+      "english": "Extrude Mode",
+      "translation": "圓錐擠出模式",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "圓錐、圓柱、圓頂或球體",
+      "scope_notes": {}
+    },
+    "atak.federation": {
+      "english": "Federation",
+      "translation": "聯邦連線",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "跨伺服器連線機制",
+      "scope_notes": {}
+    },
+    "atak.feed-dashboard": {
+      "english": "Feed Dashboard",
+      "translation": "頻道儀表板",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.fema": {
+      "english": "FEMA",
+      "translation": "聯邦緊急事務管理署",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "Federal Emergency Management Agency",
+      "scope_notes": {}
+    },
+    "atak.field-of-view": {
+      "english": "Field of View",
+      "translation": "攝影機視野",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.fine-adjust": {
+      "english": "Fine Adjust",
+      "translation": "微調模式",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.fire-area-survey-tool-plugin": {
+      "english": "Fire Area Survey Tool Plugin",
+      "translation": "火場勘查工具套件",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.fire-hydrants": {
+      "english": "Fire Hydrants",
+      "translation": "消防栓",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.firing-operation": {
+      "english": "Firing Operation",
+      "translation": "點火作業",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.first-person-tool": {
+      "english": "First Person Tool",
+      "translation": "第一人稱工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.freehand-line-telestrate": {
+      "english": "Freehand Line (Telestrate)",
+      "translation": "手繪線條",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.generate": {
+      "english": "Generate",
+      "translation": "產生",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.geofence-tool": {
+      "english": "Geofence Tool",
+      "translation": "地理圍欄工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.geoops": {
+      "english": "GeoOps",
+      "translation": "GeoOps 地理空間作業",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "NWCG 標準",
+      "scope_notes": {}
+    },
+    "atak.gots-government-off-the-shelf": {
+      "english": "GOTS (Government-off-the-Shelf)",
+      "translation": "美國聯邦通用軟體",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "由美國政府機構開發的軟體解決方案",
+      "scope_notes": {}
+    },
+    "atak.graphhopper": {
+      "english": "GraphHopper",
+      "translation": "GraphHopper",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "VNS 離線路線資料格式與規劃引擎",
+      "scope_notes": {}
+    },
+    "atak.grid": {
+      "english": "Grid",
+      "translation": "格狀",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.grid-lines": {
+      "english": "Grid Lines",
+      "translation": "格線",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.haptic": {
+      "english": "Haptic",
+      "translation": "觸覺回饋",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "device-system-settings"
+      ],
+      "kind": "setting",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.haz-mat": {
+      "english": "Haz-Mat",
+      "translation": "危險物品",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.hlz-helo-landing-zone": {
+      "english": "HLZ (Helo Landing Zone)",
+      "translation": "直升機降落區",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.home": {
+      "english": "Home",
+      "translation": "主畫面",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.hoselay": {
+      "english": "Hoselay",
+      "translation": "水線鋪設",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.import-manager": {
+      "english": "Import Manager",
+      "translation": "匯入管理器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.import-resolver": {
+      "english": "Import Resolver",
+      "translation": "匯入解析器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "ATAK 用來辨識檔案並選擇 importer 的元件",
+      "scope_notes": {}
+    },
+    "atak.incident-command-system": {
+      "english": "Incident Command System",
+      "translation": "事件指揮系統",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.internal-gnss-gps-receiver": {
+      "english": "Internal GNSS/GPS Receiver",
+      "translation": "內建 GNSS/GPS 接收器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "裝置內部 GNSS/GPS 晶片提供的位置來源",
+      "scope_notes": {}
+    },
+    "atak.isrv-rover": {
+      "english": "ISRV (Rover)",
+      "translation": "ISRV 影像接收器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.keystore": {
+      "english": "Keystore",
+      "translation": "金鑰儲存區",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "保存憑證、憑證鏈或私密金鑰的受密碼保護容器",
+      "scope_notes": {}
+    },
+    "atak.klv-key-length-value": {
+      "english": "KLV (Key-Length-Value)",
+      "translation": "KLV 中繼資料",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "影像中繼資料格式",
+      "scope_notes": {}
+    },
+    "atak.kml-link": {
+      "english": "KML Link",
+      "translation": "KML Link",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "Select Import Type 中的 KML Network Link 匯入選項",
+      "scope_notes": {}
+    },
+    "atak.kml-network-link": {
+      "english": "KML Network Link",
+      "translation": "KML Network Link",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "可定期從網路來源更新 KML / KMZ 資料的連結",
+      "scope_notes": {}
+    },
+    "atak.lan-local-area-network": {
+      "english": "LAN (Local Area Network)",
+      "translation": "區域網路",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.landing-zones": {
+      "english": "Landing Zones",
+      "translation": "降落區",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.line-of-sight": {
+      "english": "Line of Sight",
+      "translation": "直線視距",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.list-tab": {
+      "english": "List Tab",
+      "translation": "List 分頁",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "WASP 標記清單分頁",
+      "scope_notes": {}
+    },
+    "atak.load-unload": {
+      "english": "Load / Unload",
+      "translation": "載入 / 卸載",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.location-input-manager": {
+      "english": "Location Input Manager",
+      "translation": "位置輸入管理器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.location-provider": {
+      "english": "Location Provider",
+      "translation": "位置提供者",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "位置資訊來源",
+      "scope_notes": {}
+    },
+    "atak.manifest": {
+      "english": "Manifest",
+      "translation": "Manifest 套件清單",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "描述 Data Package 識別資訊、封裝內容與匯入 metadata 的 XML 檔案",
+      "scope_notes": {}
+    },
+    "atak.map-controls": {
+      "english": "Map Controls",
+      "translation": "地圖控制",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.map-outlines": {
+      "english": "Map Outlines",
+      "translation": "地圖外框",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.maps-favorites": {
+      "english": "Maps & Favorites",
+      "translation": "地圖與我的最愛",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "ATAK 中管理底圖、離線地圖及常用地圖位置的工具",
+      "scope_notes": {}
+    },
+    "atak.medevac-medical-evacuation": {
+      "english": "MEDEVAC (Medical Evacuation)",
+      "translation": "醫療後送",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.minimum-safe-distance": {
+      "english": "Minimum Safe Distance",
+      "translation": "最小安全距離",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.mission-package": {
+      "english": "Mission Package",
+      "translation": "Mission Package 資料集封裝格式",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "具有 `MANIFEST/manifest.xml` 的 TAK 資料集容器",
+      "scope_notes": {}
+    },
+    "atak.monitor": {
+      "english": "Monitor",
+      "translation": "監控",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.multi-residence": {
+      "english": "Multi-Residence",
+      "translation": "多戶住宅",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.network-resources": {
+      "english": "Network Resources",
+      "translation": "網路資源",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "ATAK 中管理 KML Network Link 等網路資料來源的區段",
+      "scope_notes": {}
+    },
+    "atak.nwcg": {
+      "english": "NWCG",
+      "translation": "國家野火協調組",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "National Wildfire Coordinating Group",
+      "scope_notes": {}
+    },
+    "atak.object-info": {
+      "english": "Object Info",
+      "translation": "物件資訊",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.off-screen-indicators": {
+      "english": "Off Screen Indicators",
+      "translation": "離屏指示器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.offline-routing": {
+      "english": "Offline Routing",
+      "translation": "離線路線規劃",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "使用裝置內的 GraphHopper 資料規劃路線",
+      "scope_notes": {}
+    },
+    "atak.other-overlays": {
+      "english": "Other Overlays",
+      "translation": "其他疊加層",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.overflow-overflow-button": {
+      "english": "Overflow / Overflow Button",
+      "translation": "Overflow 按鈕",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "展開工具列",
+      "scope_notes": {}
+    },
+    "atak.overlay-menu": {
+      "english": "Overlay Menu",
+      "translation": "疊加層選單",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.overlays": {
+      "english": "Overlays",
+      "translation": "圖層",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "ATAK 工具選單中用於分類、整理及控制圖層能見度的工具",
+      "scope_notes": {}
+    },
+    "atak.payload": {
+      "english": "Payload",
+      "translation": "封裝內容",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "Data Package 內由 Manifest 引用並交由 ATAK 匯入的資料檔案",
+      "scope_notes": {}
+    },
+    "atak.percent-encoding": {
+      "english": "Percent-encoding",
+      "translation": "百分比編碼",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "將 URI 保留字元編碼為 `%HH` 格式",
+      "scope_notes": {}
+    },
+    "atak.pkcs-12": {
+      "english": "PKCS#12",
+      "translation": "PKCS#12 憑證容器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "可保存憑證鏈、用戶端憑證與私密金鑰的二進位容器，常用副檔名為 `.p12`",
+      "scope_notes": {}
+    },
+    "atak.plugin-plug-ins": {
+      "english": "Plugin / Plug-ins",
+      "translation": "套件（外掛套件）",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.potential-fatality-pf": {
+      "english": "Potential Fatality (PF)",
+      "translation": "潛在死亡",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.potential-victim-pv": {
+      "english": "Potential Victim (PV)",
+      "translation": "潛在傷患",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.prc-152": {
+      "english": "PRC-152",
+      "translation": "PRC-152 無線電",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "Harris 語音與資料無線電",
+      "scope_notes": {}
+    },
+    "atak.qr-code": {
+      "english": "QR Code",
+      "translation": "QR Code 二維條碼",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "可承載 ATAK `tak:` 深層連結的二維條碼",
+      "scope_notes": {}
+    },
+    "atak.quick-navigation-tool": {
+      "english": "Quick Navigation Tool",
+      "translation": "快速導航工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.quick-pic-tool": {
+      "english": "Quick Pic Tool",
+      "translation": "快速拍照工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.quit": {
+      "english": "Quit",
+      "translation": "離開按鈕",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.radial-menu": {
+      "english": "Radial Menu",
+      "translation": "環形選單",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.radio-controls": {
+      "english": "Radio Controls",
+      "translation": "無線電控制",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.range-rings": {
+      "english": "Range Rings",
+      "translation": "距離環",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.range-units": {
+      "english": "Range Units",
+      "translation": "距離單位",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.record": {
+      "english": "Record",
+      "translation": "錄製",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.red-x-tool": {
+      "english": "Red X Tool",
+      "translation": "Red X 工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.remarks": {
+      "english": "Remarks",
+      "translation": "備註",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.remote-resources": {
+      "english": "Remote Resources",
+      "translation": "遠端資源",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.resection-tool": {
+      "english": "Resection Tool",
+      "translation": "後方定位工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "根據已知點估算自身位置",
+      "scope_notes": {}
+    },
+    "atak.resolve": {
+      "english": "Resolve",
+      "translation": "解決",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "解決請求",
+      "scope_notes": {}
+    },
+    "atak.reverse-landscape": {
+      "english": "Reverse Landscape",
+      "translation": "反向橫向",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "device-system-settings"
+      ],
+      "kind": "setting",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.route": {
+      "english": "Route",
+      "translation": "路線",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.route-around-regions": {
+      "english": "Route Around Regions",
+      "translation": "繞避區域",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "讓離線路線避開指定形狀或地理圍欄",
+      "scope_notes": {}
+    },
+    "atak.route-preferences": {
+      "english": "Route Preferences",
+      "translation": "路線偏好設定",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.route-tool": {
+      "english": "Route Tool",
+      "translation": "路線工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.route-type": {
+      "english": "Route Type",
+      "translation": "路線類型",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "Driving、Walking、Flying、Swimming 或 Watercraft",
+      "scope_notes": {}
+    },
+    "atak.routing-method": {
+      "english": "Routing Method",
+      "translation": "路線規劃方式",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.rubber-sheet-tool": {
+      "english": "Rubber Sheet Tool",
+      "translation": "橡皮擦工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.send-to-groups": {
+      "english": "Send to Groups",
+      "translation": "傳送給自訂群組",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "communication-sharing"
+      ],
+      "kind": "communication",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.send-to-individuals": {
+      "english": "Send to Individuals",
+      "translation": "傳送給個別使用者",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "communication-sharing"
+      ],
+      "kind": "communication",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.send-to-teams": {
+      "english": "Send to Teams",
+      "translation": "傳送給整個團隊",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "communication-sharing"
+      ],
+      "kind": "communication",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.shelter-in-place": {
+      "english": "Shelter in Place",
+      "translation": "就地避難",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.show-all-preferences": {
+      "english": "Show All Preferences",
+      "translation": "顯示所有偏好設定",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.side-tray": {
+      "english": "Side Tray",
+      "translation": "側邊托盤",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.slicer": {
+      "english": "Slicer",
+      "translation": "Slicer 切片檢視",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.slope": {
+      "english": "Slope",
+      "translation": "坡度",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.sms": {
+      "english": "SMS",
+      "translation": "SMS 簡訊",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.sp-starting-point": {
+      "english": "SP (Starting Point)",
+      "translation": "起始點",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.srtm": {
+      "english": "SRTM",
+      "translation": "太空梭雷達地形任務",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "Shuttle Radar Topography Mission",
+      "scope_notes": {}
+    },
+    "atak.static-points": {
+      "english": "Static Points",
+      "translation": "靜態點測量",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.sticky-tag": {
+      "english": "Sticky Tag",
+      "translation": "Sticky Tag 持久標籤",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.swiftwater-rescue-points": {
+      "english": "Swiftwater Rescue Points",
+      "translation": "水域救援點",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.tactical-overlay": {
+      "english": "Tactical Overlay",
+      "translation": "戰術疊加",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.tactical-symbols": {
+      "english": "Tactical Symbols",
+      "translation": "戰術符號",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.tak-package-management": {
+      "english": "TAK Package Management",
+      "translation": "TAK 套件管理",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.tap-coordinate-action": {
+      "english": "Tap Coordinate Action",
+      "translation": "點選座標動作",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.telestrate": {
+      "english": "Telestrate",
+      "translation": "手繪線條",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.tgt-target": {
+      "english": "TGT (Target)",
+      "translation": "目標 / 終點",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.tiles": {
+      "english": "Tiles",
+      "translation": "圖磚",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.tilt": {
+      "english": "Tilt",
+      "translation": "傾斜（地圖視角）",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.tool-bar": {
+      "english": "Tool Bar",
+      "translation": "工具列",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.tool-bar-customization": {
+      "english": "Tool Bar Customization",
+      "translation": "工具列外觀自訂",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "device-system-settings"
+      ],
+      "kind": "setting",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.toolbar-manager": {
+      "english": "Toolbar Manager",
+      "translation": "工具列管理器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.track-history-tool": {
+      "english": "Track History Tool",
+      "translation": "軌跡歷史工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.true-north": {
+      "english": "True North",
+      "translation": "真北",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.undo": {
+      "english": "Undo",
+      "translation": "復原",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.unit-display-format-preferences": {
+      "english": "Unit Display Format Preferences",
+      "translation": "單位顯示格式偏好設定",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.vehicle-navigation-system-vns": {
+      "english": "Vehicle Navigation System (VNS)",
+      "translation": "車輛導航系統（VNS）",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "VNS 套件的完整名稱",
+      "scope_notes": {}
+    },
+    "atak.vibration": {
+      "english": "Vibration",
+      "translation": "震動",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "device-system-settings"
+      ],
+      "kind": "setting",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.viewshed": {
+      "english": "Viewshed",
+      "translation": "視域分析",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.vns-plugin": {
+      "english": "VNS Plugin",
+      "translation": "VNS 套件",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "離線與線上路線規劃套件",
+      "scope_notes": {}
+    },
+    "atak.wasp-structure": {
+      "english": "WASP Structure",
+      "translation": "建築結構",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "WASP 建築搜尋標記",
+      "scope_notes": {}
+    },
+    "atak.wasp-tool": {
+      "english": "WASP Tool",
+      "translation": "WASP 廣域搜尋工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "Wide Area Search Plugin",
+      "scope_notes": {}
+    },
+    "atak.wasp-wide-area-search-plugin": {
+      "english": "WASP (Wide Area Search Plugin)",
+      "translation": "WASP 廣域搜尋套件",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.waypoint": {
+      "english": "Waypoint",
+      "translation": "航點",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.wfs-web-feature-service": {
+      "english": "WFS (Web Feature Service)",
+      "translation": "WFS 服務",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.wildland-hoselay": {
+      "english": "Wildland Hoselay",
+      "translation": "野地水線鋪設",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "atak.zmist": {
+      "english": "ZMIST",
+      "translation": "ZMIST 報告",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "ZAP number / Mechanism of Injury / Injury / Symptoms / Treatment",
+      "scope_notes": {}
+    },
+    "itak.ads-b": {
+      "english": "ADS-B",
+      "translation": "ADS-B",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "Automatic Dependent Surveillance-Broadcast 航空器位置廣播",
+      "scope_notes": {}
+    },
+    "itak.airtak": {
+      "english": "AirTAK",
+      "translation": "AirTAK",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "航空追蹤硬體裝置",
+      "scope_notes": {}
+    },
+    "itak.bft-blue-force-tracking": {
+      "english": "BFT (Blue Force Tracking)",
+      "translation": "友軍追蹤",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "即時團隊位置追蹤",
+      "scope_notes": {}
+    },
+    "itak.breadcrumbs-tool": {
+      "english": "Breadcrumbs Tool",
+      "translation": "麵包屑軌跡工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "追蹤標記移動並記錄軌跡",
+      "scope_notes": {}
+    },
+    "itak.cotak": {
+      "english": "COTAK",
+      "translation": "COTAK",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "Colorado Team Awareness Kit 伺服器系統",
+      "scope_notes": {}
+    },
+    "itak.imdf": {
+      "english": "IMDF",
+      "translation": "IMDF 室內地圖格式",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "Indoor Mapping Data Format",
+      "scope_notes": {}
+    },
+    "itak.layers-tool": {
+      "english": "Layers Tool",
+      "translation": "圖層工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "iTAK 中的圖層管理工具",
+      "scope_notes": {}
+    },
+    "itak.meshtastic": {
+      "english": "Meshtastic",
+      "translation": "Meshtastic",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "LoRa 網狀網路通訊",
+      "scope_notes": {}
+    },
+    "itak.share": {
+      "english": "Share",
+      "translation": "分享",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "itak.stale-marker": {
+      "english": "Stale Marker",
+      "translation": "過期標記",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "超過設定時間的標記",
+      "scope_notes": {}
+    },
+    "itak.tak-channels": {
+      "english": "TAK Channels",
+      "translation": "TAK 頻道",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "iTAK 中的伺服器頻道管理",
+      "scope_notes": {}
+    },
+    "itak.upload-server-package": {
+      "english": "Upload Server Package",
+      "translation": "上傳伺服器套件",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "匯入伺服器連線設定檔",
+      "scope_notes": {}
+    },
+    "tak-aware.2525-markers": {
+      "english": "2525 Markers",
+      "translation": "2525 軍用符號標記",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-aware"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "軍用標準符號系統",
+      "scope_notes": {}
+    },
+    "tak-aware.debug-log": {
+      "english": "Debug Log",
+      "translation": "Debug 記錄檔",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-aware"
+      ],
+      "categories": [
+        "device-system-settings"
+      ],
+      "kind": "setting",
+      "status": "approved",
+      "notes": "除錯用記錄檔案",
+      "scope_notes": {}
+    },
+    "tak-aware.display-settings": {
+      "english": "Display Settings",
+      "translation": "顯示設定",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "TAK Aware v1.7+ 原 Situational Awareness 更名",
+      "scope_notes": {}
+    },
+    "tak-aware.favorite-servers": {
+      "english": "Favorite Servers",
+      "translation": "最愛伺服器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-aware"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "TAK Aware v1.7+ 多伺服器管理",
+      "scope_notes": {}
+    },
+    "tak-aware.gotenna": {
+      "english": "goTenna",
+      "translation": "goTenna 無線電",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-aware"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "網狀網路無線電裝置",
+      "scope_notes": {}
+    },
+    "tak-aware.hail-dashboard": {
+      "english": "HAIL Dashboard",
+      "translation": "HAIL Dashboard",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-aware"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "Rain Technology 情境感知平台",
+      "scope_notes": {}
+    },
+    "tak-aware.info-box": {
+      "english": "Info Box",
+      "translation": "資訊框",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "顯示位置與伺服器狀態",
+      "scope_notes": {}
+    },
+    "tak-aware.ios-share-sheet": {
+      "english": "iOS Share Sheet",
+      "translation": "iOS 分享面板",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "TAK Aware 接收外部 App 分享的檔案",
+      "scope_notes": {}
+    },
+    "tak-aware.network-monitor": {
+      "english": "Network Monitor",
+      "translation": "網路監控",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-aware"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "TAK Aware v1.7.3+ 斷線狀態顯示",
+      "scope_notes": {}
+    },
+    "tak-aware.sensors-iconset": {
+      "english": "Sensors Iconset",
+      "translation": "感測器圖示集",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "TAK Aware v1.7.1+",
+      "scope_notes": {}
+    },
+    "tak-aware.spot-map": {
+      "english": "Spot Map",
+      "translation": "Spot Map 定點地圖",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-aware"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "定點標記圖示集",
+      "scope_notes": {}
+    },
+    "tak-aware.video-manager": {
+      "english": "Video Manager",
+      "translation": "影像管理器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-aware"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "TAK Aware v1.7+ 影像串流管理",
+      "scope_notes": {}
+    },
+    "tak.3d": {
+      "english": "3D",
+      "translation": "3D 地圖檢視",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.add": {
+      "english": "Add",
+      "translation": "新增",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.address": {
+      "english": "Address",
+      "translation": "地址",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.alert-tool": {
+      "english": "Alert Tool",
+      "translation": "警示工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.atak-android-team-awareness-kit": {
+      "english": "ATAK (Android Team Awareness Kit)",
+      "translation": "ATAK",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "Android 版情境感知系統",
+      "scope_notes": {}
+    },
+    "tak.attachments": {
+      "english": "Attachments",
+      "translation": "附件",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "communication-sharing"
+      ],
+      "kind": "communication",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.audible-alert": {
+      "english": "Audible Alert",
+      "translation": "聲音警示",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "device-system-settings"
+      ],
+      "kind": "setting",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.auto-publish": {
+      "english": "Auto-publish",
+      "translation": "自動發布",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.bloodhound-tool": {
+      "english": "Bloodhound Tool",
+      "translation": "Bloodhound 工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.broadcast": {
+      "english": "Broadcast",
+      "translation": "廣播",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "communication-sharing",
+        "actions"
+      ],
+      "kind": "communication",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.call-sign-callsign": {
+      "english": "Call Sign / Callsign",
+      "translation": "呼號",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.certificate": {
+      "english": "Certificate",
+      "translation": "憑證檔案",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.channels": {
+      "english": "Channels",
+      "translation": "頻道",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak",
+        "tak-aware"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "伺服器端資料篩選機制",
+      "scope_notes": {}
+    },
+    "tak.circle": {
+      "english": "Circle",
+      "translation": "圓形",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.clear-content": {
+      "english": "Clear Content",
+      "translation": "清除內容",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.contact-manager": {
+      "english": "Contact Manager",
+      "translation": "聯絡人管理器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak",
+        "tak-aware"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.contact-tool-contacts": {
+      "english": "Contact Tool / Contacts",
+      "translation": "聯絡人工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.coordinate-display": {
+      "english": "Coordinate Display",
+      "translation": "座標顯示",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.cot-cursor-on-target": {
+      "english": "CoT (Cursor on Target)",
+      "translation": "CoT",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "TAK 資料交換協定",
+      "scope_notes": {}
+    },
+    "tak.create": {
+      "english": "Create",
+      "translation": "建立",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.data-package-data-packages": {
+      "english": "Data Package / Data Packages",
+      "translation": "資料集",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.data-sync": {
+      "english": "Data Sync",
+      "translation": "資料同步",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.data-sync-mission": {
+      "english": "Data Sync Mission",
+      "translation": "資料同步任務",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.data-sync-plugin": {
+      "english": "Data Sync Plugin",
+      "translation": "資料同步套件",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.dd-decimal-degree": {
+      "english": "DD (Decimal Degree)",
+      "translation": "十進位度數",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.delete": {
+      "english": "Delete",
+      "translation": "刪除",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.digital-pointer-tool": {
+      "english": "Digital Pointer Tool",
+      "translation": "數位指標工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "itak"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.dismiss": {
+      "english": "Dismiss",
+      "translation": "解除",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "itak"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.display-preferences": {
+      "english": "Display Preferences",
+      "translation": "顯示偏好設定",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.dm-degree-decimal-minute": {
+      "english": "DM (Degree Decimal Minute)",
+      "translation": "度與十進位分",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.dms-degrees-minutes-seconds": {
+      "english": "DMS (Degrees Minutes Seconds)",
+      "translation": "度分秒",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.download": {
+      "english": "Download",
+      "translation": "下載",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.download-sync": {
+      "english": "Download & Sync",
+      "translation": "下載並同步",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.drawing-tools": {
+      "english": "Drawing Tools",
+      "translation": "繪圖工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.dtg": {
+      "english": "DTG",
+      "translation": "日期時間組",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "Date Time Group",
+      "scope_notes": {}
+    },
+    "tak.edit": {
+      "english": "Edit",
+      "translation": "編輯",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.ellipse": {
+      "english": "Ellipse",
+      "translation": "橢圓形",
+      "forbidden": [],
+      "aliases": [
+        {
+          "value": "Ellipse / Oval",
+          "type": "ui-variant"
+        }
+      ],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.eta": {
+      "english": "ETA",
+      "translation": "預估抵達時間",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "Estimated Time of Arrival",
+      "scope_notes": {}
+    },
+    "tak.eula-end-user-license-agreement": {
+      "english": "EULA (End User License Agreement)",
+      "translation": "終端使用者授權合約",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.export": {
+      "english": "Export",
+      "translation": "匯出",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.feed": {
+      "english": "Feed",
+      "translation": "頻道",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "Data Sync 中的資料頻道",
+      "scope_notes": {}
+    },
+    "tak.feed-list": {
+      "english": "Feed List",
+      "translation": "頻道清單",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.file-overlays": {
+      "english": "File Overlays",
+      "translation": "檔案疊加層",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.gallery": {
+      "english": "Gallery",
+      "translation": "相簿",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "communication-sharing"
+      ],
+      "kind": "communication",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.geofence": {
+      "english": "Geofence",
+      "translation": "地理圍欄",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.geopdf": {
+      "english": "GeoPDF",
+      "translation": "GeoPDF",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "地理參照 PDF",
+      "scope_notes": {}
+    },
+    "tak.geospatial-information": {
+      "english": "Geospatial Information",
+      "translation": "地理空間資料",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.geotiff": {
+      "english": "GeoTIFF",
+      "translation": "GeoTIFF",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "地理參照 TIFF 影像",
+      "scope_notes": {}
+    },
+    "tak.go-to-tool": {
+      "english": "Go To Tool",
+      "translation": "Go To 工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {
+        "tak-aware": "TAK Aware v1.7+ 座標輸入與導航"
+      }
+    },
+    "tak.gpx": {
+      "english": "GPX",
+      "translation": "GPX 格式",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "GPS 交換格式",
+      "scope_notes": {}
+    },
+    "tak.groups": {
+      "english": "Groups",
+      "translation": "群組",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "communication-sharing"
+      ],
+      "kind": "communication",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.hashtag": {
+      "english": "Hashtag",
+      "translation": "Hashtag 標籤",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.heading": {
+      "english": "Heading",
+      "translation": "行進方位",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.icon-set": {
+      "english": "Icon Set",
+      "translation": "圖示集",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.image-overlay-image-overlays": {
+      "english": "Image Overlay / Image Overlays",
+      "translation": "影像疊加層",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.imagery": {
+      "english": "Imagery",
+      "translation": "影像",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "地圖底圖類型",
+      "scope_notes": {}
+    },
+    "tak.import": {
+      "english": "Import",
+      "translation": "匯入",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.itak": {
+      "english": "iTAK",
+      "translation": "iTAK",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "iOS 版本",
+      "scope_notes": {}
+    },
+    "tak.kml-kmz": {
+      "english": "KML / KMZ",
+      "translation": "KML / KMZ",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "地理標記語言格式",
+      "scope_notes": {}
+    },
+    "tak.landscape": {
+      "english": "Landscape",
+      "translation": "橫向",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "device-system-settings"
+      ],
+      "kind": "setting",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.lasso-select-tool": {
+      "english": "Lasso Select Tool",
+      "translation": "套索選取工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.list": {
+      "english": "List",
+      "translation": "清單",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.long-press": {
+      "english": "Long Press",
+      "translation": "長按",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.map-engine": {
+      "english": "Map Engine",
+      "translation": "地圖引擎",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.marker-markers": {
+      "english": "Marker / Markers",
+      "translation": "標記 / 標記點",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.mbtiles": {
+      "english": "MBTiles",
+      "translation": "MBTiles",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak",
+        "tak-aware"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "離線地圖格式",
+      "scope_notes": {}
+    },
+    "tak.mgrs": {
+      "english": "MGRS",
+      "translation": "軍事格網座標系統",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "Military Grid Reference System",
+      "scope_notes": {}
+    },
+    "tak.more-info": {
+      "english": "More Info",
+      "translation": "詳細資訊",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.multi-select": {
+      "english": "Multi-Select",
+      "translation": "多選",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.north-arrow": {
+      "english": "North Arrow",
+      "translation": "北方箭頭",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.north-up": {
+      "english": "North Up",
+      "translation": "北方朝上",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.notifications": {
+      "english": "Notifications",
+      "translation": "通知",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.orientation-tool": {
+      "english": "Orientation Tool",
+      "translation": "螢幕方向工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "device-system-settings"
+      ],
+      "kind": "setting",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.overlay-manager": {
+      "english": "Overlay Manager",
+      "translation": "圖層管理器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.owner-subscriber-read-only": {
+      "english": "Owner / Subscriber / Read-Only",
+      "translation": "擁有者 / 訂閱者 / 唯讀",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "Data Sync 頻道角色",
+      "scope_notes": {}
+    },
+    "tak.phone": {
+      "english": "Phone",
+      "translation": "電話",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "communication-sharing"
+      ],
+      "kind": "communication",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.play": {
+      "english": "Play",
+      "translation": "播放",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.point-dropper-tool": {
+      "english": "Point Dropper Tool",
+      "translation": "Point Dropper 工具",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.polygon-polyline": {
+      "english": "Polygon / Polyline",
+      "translation": "多邊形 / 折線",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.portrait": {
+      "english": "Portrait",
+      "translation": "直向",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "device-system-settings"
+      ],
+      "kind": "setting",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.publish": {
+      "english": "Publish",
+      "translation": "發布",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.r-b-range-bearing": {
+      "english": "R&B (Range & Bearing)",
+      "translation": "距離與方位",
+      "forbidden": [],
+      "aliases": [
+        {
+          "value": "R&B / Range & Bearing",
+          "type": "ui-variant"
+        }
+      ],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.sa-situational-awareness": {
+      "english": "SA (Situational Awareness)",
+      "translation": "情境感知",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.search": {
+      "english": "Search",
+      "translation": "搜尋",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.select": {
+      "english": "Select",
+      "translation": "選取",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.send": {
+      "english": "Send",
+      "translation": "傳送",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "communication-sharing"
+      ],
+      "kind": "communication",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.server": {
+      "english": "Server",
+      "translation": "伺服器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.settings": {
+      "english": "Settings",
+      "translation": "設定",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "ui-elements"
+      ],
+      "kind": "ui-element",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.shape-shapes": {
+      "english": "Shape / Shapes",
+      "translation": "形狀",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.situational-awareness-data": {
+      "english": "Situational Awareness Data",
+      "translation": "情境感知資料",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.spi-sensor-point-of-interest": {
+      "english": "SPI (Sensor Point of Interest)",
+      "translation": "感測器興趣點",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.square-rectangle": {
+      "english": "Square / Rectangle",
+      "translation": "正方形 / 矩形",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "shapes-drawing"
+      ],
+      "kind": "shape",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.stream": {
+      "english": "Stream",
+      "translation": "串流",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.subscribe-unsubscribe": {
+      "english": "Subscribe / Unsubscribe",
+      "translation": "訂閱 / 取消訂閱",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.sync": {
+      "english": "Sync",
+      "translation": "同步",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.tak-aware": {
+      "english": "TAK Aware",
+      "translation": "TAK Aware",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "itak",
+        "tak-aware"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "iOS 版 TAK，由 Flight Tactics 開發",
+      "scope_notes": {}
+    },
+    "tak.tak-chat": {
+      "english": "TAK Chat",
+      "translation": "TAK Chat 聊天套件",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "XMPP 聊天功能",
+      "scope_notes": {}
+    },
+    "tak.tak-server": {
+      "english": "TAK Server",
+      "translation": "TAK 伺服器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.tak-team-awareness-kit": {
+      "english": "TAK (Team Awareness Kit)",
+      "translation": "TAK",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "總稱",
+      "scope_notes": {}
+    },
+    "tak.tak-tracker": {
+      "english": "TAK TRACKER",
+      "translation": "TAK TRACKER 套件",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.tap": {
+      "english": "Tap",
+      "translation": "點選",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.team-color": {
+      "english": "Team Color",
+      "translation": "團隊顏色",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "military-emergency"
+      ],
+      "kind": "domain-term",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.team-teams": {
+      "english": "Team / Teams",
+      "translation": "團隊",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "communication-sharing"
+      ],
+      "kind": "communication",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.teamconnect-sit-x": {
+      "english": "TeamConnect Sit(x)",
+      "translation": "TeamConnect Sit(x)",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "雲端型網路服務解決方案",
+      "scope_notes": {}
+    },
+    "tak.timeline-view": {
+      "english": "Timeline View",
+      "translation": "時間軸檢視",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.track-list": {
+      "english": "Track List",
+      "translation": "軌跡清單",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.track-log": {
+      "english": "Track Log",
+      "translation": "軌跡記錄",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.track-up": {
+      "english": "Track Up",
+      "translation": "航向朝上",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.transparency": {
+      "english": "Transparency",
+      "translation": "透明度",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.update-server": {
+      "english": "Update Server",
+      "translation": "更新伺服器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.user-log": {
+      "english": "User Log",
+      "translation": "使用者日誌",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "systems-servers"
+      ],
+      "kind": "system",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.utm": {
+      "english": "UTM",
+      "translation": "通用橫麥卡托座標系統",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "Universal Transverse Mercator",
+      "scope_notes": {}
+    },
+    "tak.video-player": {
+      "english": "Video Player",
+      "translation": "影像播放器",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "features-tools"
+      ],
+      "kind": "feature",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.view": {
+      "english": "View",
+      "translation": "檢視",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "actions"
+      ],
+      "kind": "action",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.visibility": {
+      "english": "Visibility",
+      "translation": "能見度",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "map-operations"
+      ],
+      "kind": "map-operation",
+      "status": "approved",
+      "notes": "",
+      "scope_notes": {}
+    },
+    "tak.webtak": {
+      "english": "WebTAK",
+      "translation": "WebTAK",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "網頁版本",
+      "scope_notes": {}
+    },
+    "tak.wintak": {
+      "english": "WinTAK",
+      "translation": "WinTAK",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "tak-common"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "Windows 版本",
+      "scope_notes": {}
+    },
+    "tak.xmpp": {
+      "english": "XMPP",
+      "translation": "XMPP",
+      "forbidden": [],
+      "aliases": [],
+      "scopes": [
+        "atak",
+        "tak-aware"
+      ],
+      "categories": [
+        "abbreviations-platforms"
+      ],
+      "kind": "abbreviation",
+      "status": "approved",
+      "notes": "即時通訊協定",
+      "scope_notes": {}
+    }
+  },
+  "lookup": {
+    "2525 markers": "tak-aware.2525-markers",
+    "3d": "tak.3d",
+    "action menu": "atak.action-menu",
+    "active shooter": "atak.active-shooter",
+    "add": "tak.add",
+    "address": "tak.address",
+    "ads-b": "itak.ads-b",
+    "aes-256": "atak.aes-256",
+    "aircraft": "atak.aircraft",
+    "airtak": "itak.airtak",
+    "alert tool": "tak.alert-tool",
+    "app preferences": "atak.app-preferences",
+    "app switcher": "atak.app-switcher",
+    "atak (android team awareness kit)": "tak.atak-android-team-awareness-kit",
+    "atak geochat": "atak.atak-geochat",
+    "attachments": "tak.attachments",
+    "audible alert": "tak.audible-alert",
+    "audible chat notifications": "atak.audible-chat-notifications",
+    "audio": "atak.audio",
+    "auto-publish": "tak.auto-publish",
+    "back": "atak.back",
+    "bft (blue force tracking)": "itak.bft-blue-force-tracking",
+    "billboard": "atak.billboard",
+    "bloodhound tool": "tak.bloodhound-tool",
+    "breadcrumbs tool": "itak.breadcrumbs-tool",
+    "briefing graphics": "atak.briefing-graphics",
+    "brightness": "atak.brightness",
+    "broadcast": "tak.broadcast",
+    "bullseye": "atak.bullseye",
+    "ca trust store": "atak.ca-trust-store",
+    "call sign / callsign": "tak.call-sign-callsign",
+    "cardinal direction": "atak.cardinal-direction",
+    "casevac (casualty evacuation)": "atak.casevac-casualty-evacuation",
+    "casevac tool": "atak.casevac-tool",
+    "cbrn": "atak.cbrn",
+    "center designator": "atak.center-designator",
+    "certificate": "tak.certificate",
+    "certificate enrollment": "atak.certificate-enrollment",
+    "change coordinates": "atak.change-coordinates",
+    "channels": "tak.channels",
+    "chat tool": "atak.chat-tool",
+    "circle": "tak.circle",
+    "clear content": "tak.clear-content",
+    "client certificate store": "atak.client-certificate-store",
+    "closing distance": "atak.closing-distance",
+    "color pin wheel": "atak.color-pin-wheel",
+    "companion app": "atak.companion-app",
+    "concentric circles": "atak.concentric-circles",
+    "confirmed fatality (cf)": "atak.confirmed-fatality-cf",
+    "confirmed victim (cv)": "atak.confirmed-victim-cv",
+    "contact manager": "tak.contact-manager",
+    "contact tool / contacts": "tak.contact-tool-contacts",
+    "content type": "atak.content-type",
+    "contour lines": "atak.contour-lines",
+    "control preferences": "atak.control-preferences",
+    "convert coordinate": "atak.convert-coordinate",
+    "coordinate display": "tak.coordinate-display",
+    "cop refresh": "atak.cop-refresh",
+    "cot (cursor on target)": "tak.cot-cursor-on-target",
+    "cotak": "itak.cotak",
+    "create": "tak.create",
+    "cue": "atak.cue",
+    "data package / data packages": "tak.data-package-data-packages",
+    "data sync": "tak.data-sync",
+    "data sync mission": "tak.data-sync-mission",
+    "data sync plugin": "tak.data-sync-plugin",
+    "datasync feeds": "atak.datasync-feeds",
+    "dd (decimal degree)": "tak.dd-decimal-degree",
+    "debug log": "tak-aware.debug-log",
+    "deep link": "atak.deep-link",
+    "delete": "tak.delete",
+    "device profile": "atak.device-profile",
+    "digital pointer tool": "tak.digital-pointer-tool",
+    "dismiss": "tak.dismiss",
+    "display preferences": "tak.display-preferences",
+    "display settings": "tak-aware.display-settings",
+    "dm (degree decimal minute)": "tak.dm-degree-decimal-minute",
+    "dms (degrees minutes seconds)": "tak.dms-degrees-minutes-seconds",
+    "download": "tak.download",
+    "download & sync": "tak.download-sync",
+    "dpk (data package)": "atak.dpk-data-package",
+    "dpk builder": "atak.dpk-builder",
+    "dpk validator": "atak.dpk-validator",
+    "draw": "atak.draw",
+    "drawing tools": "tak.drawing-tools",
+    "drop tab": "atak.drop-tab",
+    "dted": "atak.dted",
+    "dtg": "tak.dtg",
+    "dynamic points": "atak.dynamic-points",
+    "edit": "tak.edit",
+    "elevation heat map": "atak.elevation-heat-map",
+    "elevation manager": "atak.elevation-manager",
+    "elevation profile": "atak.elevation-profile",
+    "elevation tools": "atak.elevation-tools",
+    "ellipse": "tak.ellipse",
+    "ellipse / oval": "tak.ellipse",
+    "encrypted mesh": "atak.encrypted-mesh",
+    "end editing": "atak.end-editing",
+    "end shape": "atak.end-shape",
+    "escape route": "atak.escape-route",
+    "eta": "tak.eta",
+    "eula (end user license agreement)": "tak.eula-end-user-license-agreement",
+    "export": "tak.export",
+    "extent": "atak.extent",
+    "extrude mode": "atak.extrude-mode",
+    "favorite servers": "tak-aware.favorite-servers",
+    "federation": "atak.federation",
+    "feed": "tak.feed",
+    "feed dashboard": "atak.feed-dashboard",
+    "feed list": "tak.feed-list",
+    "fema": "atak.fema",
+    "field of view": "atak.field-of-view",
+    "file overlays": "tak.file-overlays",
+    "fine adjust": "atak.fine-adjust",
+    "fire area survey tool plugin": "atak.fire-area-survey-tool-plugin",
+    "fire hydrants": "atak.fire-hydrants",
+    "firing operation": "atak.firing-operation",
+    "first person tool": "atak.first-person-tool",
+    "freehand line (telestrate)": "atak.freehand-line-telestrate",
+    "gallery": "tak.gallery",
+    "generate": "atak.generate",
+    "geofence": "tak.geofence",
+    "geofence tool": "atak.geofence-tool",
+    "geoops": "atak.geoops",
+    "geopdf": "tak.geopdf",
+    "geospatial information": "tak.geospatial-information",
+    "geotiff": "tak.geotiff",
+    "go to tool": "tak.go-to-tool",
+    "gotenna": "tak-aware.gotenna",
+    "gots (government-off-the-shelf)": "atak.gots-government-off-the-shelf",
+    "gpx": "tak.gpx",
+    "graphhopper": "atak.graphhopper",
+    "grid": "atak.grid",
+    "grid lines": "atak.grid-lines",
+    "groups": "tak.groups",
+    "hail dashboard": "tak-aware.hail-dashboard",
+    "haptic": "atak.haptic",
+    "hashtag": "tak.hashtag",
+    "haz-mat": "atak.haz-mat",
+    "heading": "tak.heading",
+    "hlz (helo landing zone)": "atak.hlz-helo-landing-zone",
+    "home": "atak.home",
+    "hoselay": "atak.hoselay",
+    "icon set": "tak.icon-set",
+    "image overlay / image overlays": "tak.image-overlay-image-overlays",
+    "imagery": "tak.imagery",
+    "imdf": "itak.imdf",
+    "import": "tak.import",
+    "import manager": "atak.import-manager",
+    "import resolver": "atak.import-resolver",
+    "incident command system": "atak.incident-command-system",
+    "info box": "tak-aware.info-box",
+    "internal gnss/gps receiver": "atak.internal-gnss-gps-receiver",
+    "ios share sheet": "tak-aware.ios-share-sheet",
+    "isrv (rover)": "atak.isrv-rover",
+    "itak": "tak.itak",
+    "keystore": "atak.keystore",
+    "klv (key-length-value)": "atak.klv-key-length-value",
+    "kml / kmz": "tak.kml-kmz",
+    "kml link": "atak.kml-link",
+    "kml network link": "atak.kml-network-link",
+    "lan (local area network)": "atak.lan-local-area-network",
+    "landing zones": "atak.landing-zones",
+    "landscape": "tak.landscape",
+    "lasso select tool": "tak.lasso-select-tool",
+    "layers tool": "itak.layers-tool",
+    "line of sight": "atak.line-of-sight",
+    "list": "tak.list",
+    "list tab": "atak.list-tab",
+    "load / unload": "atak.load-unload",
+    "location input manager": "atak.location-input-manager",
+    "location provider": "atak.location-provider",
+    "long press": "tak.long-press",
+    "manifest": "atak.manifest",
+    "map controls": "atak.map-controls",
+    "map engine": "tak.map-engine",
+    "map outlines": "atak.map-outlines",
+    "maps & favorites": "atak.maps-favorites",
+    "marker / markers": "tak.marker-markers",
+    "mbtiles": "tak.mbtiles",
+    "medevac (medical evacuation)": "atak.medevac-medical-evacuation",
+    "meshtastic": "itak.meshtastic",
+    "mgrs": "tak.mgrs",
+    "minimum safe distance": "atak.minimum-safe-distance",
+    "mission package": "atak.mission-package",
+    "monitor": "atak.monitor",
+    "more info": "tak.more-info",
+    "multi-residence": "atak.multi-residence",
+    "multi-select": "tak.multi-select",
+    "network monitor": "tak-aware.network-monitor",
+    "network resources": "atak.network-resources",
+    "north arrow": "tak.north-arrow",
+    "north up": "tak.north-up",
+    "notifications": "tak.notifications",
+    "nwcg": "atak.nwcg",
+    "object info": "atak.object-info",
+    "off screen indicators": "atak.off-screen-indicators",
+    "offline routing": "atak.offline-routing",
+    "orientation tool": "tak.orientation-tool",
+    "other overlays": "atak.other-overlays",
+    "overflow / overflow button": "atak.overflow-overflow-button",
+    "overlay manager": "tak.overlay-manager",
+    "overlay menu": "atak.overlay-menu",
+    "overlays": "atak.overlays",
+    "owner / subscriber / read-only": "tak.owner-subscriber-read-only",
+    "payload": "atak.payload",
+    "percent-encoding": "atak.percent-encoding",
+    "phone": "tak.phone",
+    "pkcs#12": "atak.pkcs-12",
+    "play": "tak.play",
+    "plugin / plug-ins": "atak.plugin-plug-ins",
+    "point dropper tool": "tak.point-dropper-tool",
+    "polygon / polyline": "tak.polygon-polyline",
+    "portrait": "tak.portrait",
+    "potential fatality (pf)": "atak.potential-fatality-pf",
+    "potential victim (pv)": "atak.potential-victim-pv",
+    "prc-152": "atak.prc-152",
+    "publish": "tak.publish",
+    "qr code": "atak.qr-code",
+    "quick navigation tool": "atak.quick-navigation-tool",
+    "quick pic tool": "atak.quick-pic-tool",
+    "quit": "atak.quit",
+    "r&b (range & bearing)": "tak.r-b-range-bearing",
+    "r&b / range & bearing": "tak.r-b-range-bearing",
+    "radial menu": "atak.radial-menu",
+    "radio controls": "atak.radio-controls",
+    "range rings": "atak.range-rings",
+    "range units": "atak.range-units",
+    "record": "atak.record",
+    "red x tool": "atak.red-x-tool",
+    "remarks": "atak.remarks",
+    "remote resources": "atak.remote-resources",
+    "resection tool": "atak.resection-tool",
+    "resolve": "atak.resolve",
+    "reverse landscape": "atak.reverse-landscape",
+    "route": "atak.route",
+    "route around regions": "atak.route-around-regions",
+    "route preferences": "atak.route-preferences",
+    "route tool": "atak.route-tool",
+    "route type": "atak.route-type",
+    "routing method": "atak.routing-method",
+    "rubber sheet tool": "atak.rubber-sheet-tool",
+    "sa (situational awareness)": "tak.sa-situational-awareness",
+    "search": "tak.search",
+    "select": "tak.select",
+    "send": "tak.send",
+    "send to groups": "atak.send-to-groups",
+    "send to individuals": "atak.send-to-individuals",
+    "send to teams": "atak.send-to-teams",
+    "sensors iconset": "tak-aware.sensors-iconset",
+    "server": "tak.server",
+    "settings": "tak.settings",
+    "shape / shapes": "tak.shape-shapes",
+    "share": "itak.share",
+    "shelter in place": "atak.shelter-in-place",
+    "show all preferences": "atak.show-all-preferences",
+    "side tray": "atak.side-tray",
+    "situational awareness data": "tak.situational-awareness-data",
+    "slicer": "atak.slicer",
+    "slope": "atak.slope",
+    "sms": "atak.sms",
+    "sp (starting point)": "atak.sp-starting-point",
+    "spi (sensor point of interest)": "tak.spi-sensor-point-of-interest",
+    "spot map": "tak-aware.spot-map",
+    "square / rectangle": "tak.square-rectangle",
+    "srtm": "atak.srtm",
+    "stale marker": "itak.stale-marker",
+    "static points": "atak.static-points",
+    "sticky tag": "atak.sticky-tag",
+    "stream": "tak.stream",
+    "subscribe / unsubscribe": "tak.subscribe-unsubscribe",
+    "swiftwater rescue points": "atak.swiftwater-rescue-points",
+    "sync": "tak.sync",
+    "tactical overlay": "atak.tactical-overlay",
+    "tactical symbols": "atak.tactical-symbols",
+    "tak (team awareness kit)": "tak.tak-team-awareness-kit",
+    "tak aware": "tak.tak-aware",
+    "tak channels": "itak.tak-channels",
+    "tak chat": "tak.tak-chat",
+    "tak package management": "atak.tak-package-management",
+    "tak server": "tak.tak-server",
+    "tak tracker": "tak.tak-tracker",
+    "tap": "tak.tap",
+    "tap coordinate action": "atak.tap-coordinate-action",
+    "team / teams": "tak.team-teams",
+    "team color": "tak.team-color",
+    "teamconnect sit(x)": "tak.teamconnect-sit-x",
+    "telestrate": "atak.telestrate",
+    "tgt (target)": "atak.tgt-target",
+    "tiles": "atak.tiles",
+    "tilt": "atak.tilt",
+    "timeline view": "tak.timeline-view",
+    "tool bar": "atak.tool-bar",
+    "tool bar customization": "atak.tool-bar-customization",
+    "toolbar manager": "atak.toolbar-manager",
+    "track history tool": "atak.track-history-tool",
+    "track list": "tak.track-list",
+    "track log": "tak.track-log",
+    "track up": "tak.track-up",
+    "transparency": "tak.transparency",
+    "true north": "atak.true-north",
+    "undo": "atak.undo",
+    "unit display format preferences": "atak.unit-display-format-preferences",
+    "update server": "tak.update-server",
+    "upload server package": "itak.upload-server-package",
+    "user log": "tak.user-log",
+    "utm": "tak.utm",
+    "vehicle navigation system (vns)": "atak.vehicle-navigation-system-vns",
+    "vibration": "atak.vibration",
+    "video manager": "tak-aware.video-manager",
+    "video player": "tak.video-player",
+    "view": "tak.view",
+    "viewshed": "atak.viewshed",
+    "visibility": "tak.visibility",
+    "vns plugin": "atak.vns-plugin",
+    "wasp (wide area search plugin)": "atak.wasp-wide-area-search-plugin",
+    "wasp structure": "atak.wasp-structure",
+    "wasp tool": "atak.wasp-tool",
+    "waypoint": "atak.waypoint",
+    "webtak": "tak.webtak",
+    "wfs (web feature service)": "atak.wfs-web-feature-service",
+    "wildland hoselay": "atak.wildland-hoselay",
+    "wintak": "tak.wintak",
+    "xmpp": "tak.xmpp",
+    "zmist": "atak.zmist"
+  }
+}
