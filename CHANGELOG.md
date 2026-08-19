@@ -1,3 +1,48 @@
+# 1.0.0 (2026-08-19)
+
+
+### Bug Fixes
+
+* address linter failures and Copilot review feedback ([d4252c6](https://github.com/swim-fish/ATAK-Maps/commit/d4252c6dbe090a9000991653b2c797b1499573fb))
+* address PR review comments ([537b23d](https://github.com/swim-fish/ATAK-Maps/commit/537b23df6af0ee55ffca0e26a6314245d7708ade))
+* **bc-wildfire:** conform merged source to schema and conventions ([#82](https://github.com/swim-fish/ATAK-Maps/issues/82)) ([767d630](https://github.com/swim-fish/ATAK-Maps/commit/767d630970780ec567d5dfe6914a095f5a1bee06)), closes [#76](https://github.com/swim-fish/ATAK-Maps/issues/76)
+* **ci:** checkout latest master tip in release workflow ([330f36c](https://github.com/swim-fish/ATAK-Maps/commit/330f36c0d19a6a568dc3745cbd4f4ce4e023e682))
+* **ci:** disable npm plugin & grant issues permission ([b612196](https://github.com/swim-fish/ATAK-Maps/commit/b612196b6801b04da4f1eae881807bf512177293))
+* clarify docs phrasing ([#50](https://github.com/swim-fish/ATAK-Maps/issues/50)) ([ca0f758](https://github.com/swim-fish/ATAK-Maps/commit/ca0f7584d22388ec7ba73328cf7212227a3af385))
+* correct XML issues found by mapvalidator ([fd779db](https://github.com/swim-fish/ATAK-Maps/commit/fd779dbfb7786d3f83fd2f640b3a130a5f8eb5cc))
+* disable isort in super-linter, keep black for formatting ([42173d4](https://github.com/swim-fish/ATAK-Maps/commit/42173d411672f98bf1f88bd952663013b72cd63c))
+* disable JSCPD and configure isort in super-linter ([53f2c04](https://github.com/swim-fish/ATAK-Maps/commit/53f2c0496b9079e60f984cd76a96291cae411cf8))
+* import per-map XML from GitHub Pages (application/xml), not raw ([#85](https://github.com/swim-fish/ATAK-Maps/issues/85)) ([2a0c4af](https://github.com/swim-fish/ATAK-Maps/commit/2a0c4afdc16fc43c007b590eae9ed9fab6452dc2))
+* minor update to force a release. ([f0ba377](https://github.com/swim-fish/ATAK-Maps/commit/f0ba3770cfe65b6f4eeb0902ee7acafd5772cc9c))
+* Remove redundant comment in PL Geoportal Ortofoto EPSG3857 XML configuration for improved clarity ([1694bcb](https://github.com/swim-fish/ATAK-Maps/commit/1694bcb0b69667992f39e01db122c3d1f712793b))
+* rename basemapDE files to remove spaces in filenames ([8d23b1e](https://github.com/swim-fish/ATAK-Maps/commit/8d23b1ebd3117cdccd07eacc7619fd1d3c0c24d0))
+* resolve remaining CI lint failures ([cd6b43d](https://github.com/swim-fish/ATAK-Maps/commit/cd6b43d1ea80857e6c0ce545b6d4c64f36f8eb85))
+* Simplify semantic-release configuration and update workflow comments for clarity ([07cdb07](https://github.com/swim-fish/ATAK-Maps/commit/07cdb074edf84bd0d5c0b9fe9fa24eb1505f1f2c))
+* **ui:** tap-to-enlarge QR lightbox; bigger scannable README QR ([#89](https://github.com/swim-fish/ATAK-Maps/issues/89)) ([93c6cf2](https://github.com/swim-fish/ATAK-Maps/commit/93c6cf2a45609b2e275e07270113277faa1d591d))
+* Update asset label in semantic-release configuration to include dynamic versioning for improved clarity in releases ([2df3f63](https://github.com/swim-fish/ATAK-Maps/commit/2df3f631e821ee7b00f0b65d5b32d8f4a7baf700))
+* Update semantic-release configuration to rename ZIP files dynamically and improve asset labeling for GitHub releases ([433c0e6](https://github.com/swim-fish/ATAK-Maps/commit/433c0e67de352aa4f4bc8d0cfdb759180167bf15))
+
+
+### Features
+
+* add BC Wildfire Overlay source ([#76](https://github.com/swim-fish/ATAK-Maps/issues/76)) ([d6c4bf9](https://github.com/swim-fish/ATAK-Maps/commit/d6c4bf9f40ced3fbda8aefd0675c91a47dee93c9))
+* add Bing Satellite (aerial-only) map source ([#67](https://github.com/swim-fish/ATAK-Maps/issues/67)) ([5fefc27](https://github.com/swim-fish/ATAK-Maps/commit/5fefc27150dc87c3c7ee3cde254e3a5ad47bdc55)), closes [#64](https://github.com/swim-fish/ATAK-Maps/issues/64)
+* add BLM land ownership (SMA) map sources ([#80](https://github.com/swim-fish/ATAK-Maps/issues/80)) ([39b2eda](https://github.com/swim-fish/ATAK-Maps/commit/39b2edaf4ddb426c4e6df3484f493e7338db49b1))
+* add CI workflows for mapvalidator, remove standalone script ([f78a785](https://github.com/swim-fish/ATAK-Maps/commit/f78a785dc4e78add8a185605fbd198cb50e17e70))
+* add deep validation script with liveness probing ([3675175](https://github.com/swim-fish/ATAK-Maps/commit/3675175f013fdd4c2dd32a384d513e5d096e54c3))
+* add map validation & liveness monitoring ([#70](https://github.com/swim-fish/ATAK-Maps/issues/70)) ([974c2a1](https://github.com/swim-fish/ATAK-Maps/commit/974c2a1ccb606a40fddc82fb6851de6244a28f93))
+* add mapvalidator package with deep XML validation and liveness probing ([185a8eb](https://github.com/swim-fish/ATAK-Maps/commit/185a8eb9757d09db1b98aaaf3a37ba89fbc7677c))
+* add Ordnance Survey map layers (Great Britain) ([#83](https://github.com/swim-fish/ATAK-Maps/issues/83)) ([ddba21d](https://github.com/swim-fish/ATAK-Maps/commit/ddba21d0d664ede6552b6b97edcaf9a0a4de674a)), closes [#68](https://github.com/swim-fish/ATAK-Maps/issues/68)
+* add soft-block detection, multi-region probing, and remove dead map sources ([66be333](https://github.com/swim-fish/ATAK-Maps/commit/66be3339976b399b9b65546beb8eb485b1fe8661))
+* add Taiwan map packages ([87c8983](https://github.com/swim-fish/ATAK-Maps/commit/87c8983dc5263d05df36e5ad1428ffa3ef6e8d9c))
+* add XSD schema for MOBAC XML map validation ([9da31a9](https://github.com/swim-fish/ATAK-Maps/commit/9da31a993c14da2fe7e741d5fa67d743ab486516))
+* Adding Polish Ortho Maps ([7c2d25e](https://github.com/swim-fish/ATAK-Maps/commit/7c2d25e62b888356332878a878a91cbe42115ebb))
+* bundle all maps as an importable ATAK data package ([#86](https://github.com/swim-fish/ATAK-Maps/issues/86)) ([c71a2ff](https://github.com/swim-fish/ATAK-Maps/commit/c71a2ff97bc77a7274457c99a8195632a9f8cfa2))
+* GitHub Pages site with per-map QR codes and Add-to-ATAK ([#84](https://github.com/swim-fish/ATAK-Maps/issues/84)) ([4935b03](https://github.com/swim-fish/ATAK-Maps/commit/4935b0335a92c69643d7b9367d7a0e7cd55c65bf)), closes [#81](https://github.com/swim-fish/ATAK-Maps/issues/81)
+* localize Taiwan map catalog and release packages ([837862e](https://github.com/swim-fish/ATAK-Maps/commit/837862eb3309036e0037b347bd94273f8ed94c8c))
+* redesign the Maps catalog, landing page, and README ([#88](https://github.com/swim-fish/ATAK-Maps/issues/88)) ([83f56ee](https://github.com/swim-fish/ATAK-Maps/commit/83f56eeb8d65c03f33a1094c726e584f7d7fdcab))
+* Remove broken FEMA NFHL XML layers and introduce new Flood Hazard Zones WMS configuration ([5c721b3](https://github.com/swim-fish/ATAK-Maps/commit/5c721b3c0ea3b894fe1e9d934bc3ab91e68230f5))
+
 # [1.8.0](https://github.com/joshuafuller/ATAK-Maps/compare/v1.7.1...v1.8.0) (2026-07-13)
 
 
